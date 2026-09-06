@@ -490,14 +490,11 @@ if (!isStatic) {
   const vercelJson = {
     $schema: 'https://openapi.vercel.sh/vercel.json',
     trailingSlash: true,
-    redirects: [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: `www.${DOMAIN}` }],
-        destination: `${BASE}/:path*`,
-        permanent: true,
-      },
-    ],
+    // NOTE: no www<->apex redirect here on purpose. Vercel's own project domain
+    // settings (Settings -> Domains) already own that canonicalization once a
+    // custom domain is connected there. A hardcoded rule here that assumes the
+    // opposite direction from what's configured in the dashboard produces an
+    // infinite redirect loop on every asset request (confirmed in production).
     headers: [
       {
         source: '/(.*)',
