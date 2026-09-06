@@ -1,6 +1,7 @@
 import { SITE, CATEGORIES, PRODUCTS, FAQS } from '@/config/site'
 import CategoryTile from '@/components/CategoryTile'
 import ProductCard from '@/components/ProductCard'
+import { TruckIcon, BadgeIcon, WrenchIcon, CoinIcon } from '@/components/icons'
 
 export const metadata = {
   title: 'Golf Carts for Sale | New & Used Club Car, EZGO, Yamaha',
@@ -82,22 +83,22 @@ export default function HomePage() {
         <div className="container">
           <div className="trust-bar">
             <div className="trust-item">
-              <div className="trust-icon" aria-hidden="true">🚚</div>
+              <div className="trust-icon" aria-hidden="true"><TruckIcon /></div>
               <strong>Free Shipping</strong>
               <span>On every order, nationwide</span>
             </div>
             <div className="trust-item">
-              <div className="trust-icon" aria-hidden="true">🏆</div>
+              <div className="trust-icon" aria-hidden="true"><BadgeIcon /></div>
               <strong>Trusted Brands</strong>
               <span>Club Car, EZGO, Yamaha</span>
             </div>
             <div className="trust-item">
-              <div className="trust-icon" aria-hidden="true">🔧</div>
+              <div className="trust-icon" aria-hidden="true"><WrenchIcon /></div>
               <strong>New &amp; Used</strong>
               <span>Inspected, refurbished options</span>
             </div>
             <div className="trust-item">
-              <div className="trust-icon" aria-hidden="true">🪙</div>
+              <div className="trust-icon" aria-hidden="true"><CoinIcon /></div>
               <strong>Crypto Discount</strong>
               <span>{SITE.cryptoDiscountPercent}% off with BTC/USDT</span>
             </div>

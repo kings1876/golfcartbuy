@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <rect width="800" height="600" fill="#ffffff"/>
-  <rect x="40" y="40" width="720" height="520" rx="16" fill="#eef2ee" stroke="#dfe6e1" stroke-width="2"/>
-  <circle cx="400" cy="200" r="70" fill="#1b5e3c"/>
-  <path d="M370 210 L395 235 L440 175" stroke="#ffffff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#123f28" text-anchor="middle"><tspan x="400" y="300">Golf Cart Buy</tspan></text>
-  <text x="400" y="540" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#4b564f" text-anchor="middle">Golf Cart Buy — photo coming soon</text>
+  <rect x="40" y="40" width="720" height="520" rx="10" fill="#ece4d6" stroke="#e3dccd" stroke-width="2"/>
+  <circle cx="400" cy="200" r="70" fill="#ffffff" stroke="#b8925a" stroke-width="2"/>
+  <path d="M370 205 h60 M375 190 a25 25 0 0 1 50 0" stroke="#9c7a48" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="365" y="205" width="70" height="30" rx="4" stroke="#9c7a48" stroke-width="5" fill="none"/>
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#1c1a17" text-anchor="middle"><tspan x="400" y="300">Golf Cart Buy</tspan></text>
+  <text x="400" y="540" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5a5650" text-anchor="middle">Golf Cart Buy — photo coming soon</text>
 </svg>

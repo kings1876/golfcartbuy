@@ -1,7 +1,7 @@
 // Pre-ship crosscheck. Boots a local `next start` server (build must already exist),
 // fetches key routes, and validates the non-negotiable rules from the WebForge skill.
 // Exits non-zero on any failure.
-import { spawn } from 'node:child_process'
+import { spawn, execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -253,11 +253,27 @@ async function main() {
 
     await checkAgentFiles()
   } finally {
-    proc.kill()
+    killServerTree(proc)
   }
 
   console.log(`\n${passes} passed, ${failures} failed.\n`)
   if (failures > 0) process.exit(1)
+}
+
+function killServerTree(proc) {
+  // proc.kill() only signals the shell wrapper on Windows (spawned with shell:true),
+  // not the actual `next start` grandchild — the server keeps listening and the
+  // script hangs forever waiting for a process tree that never exits. Kill the
+  // whole tree explicitly.
+  if (process.platform === 'win32') {
+    try {
+      execSync(`taskkill /pid ${proc.pid} /T /F`, { stdio: 'ignore' })
+    } catch {
+      // already exited
+    }
+  } else {
+    proc.kill()
+  }
 }
 
 main().catch((e) => {
