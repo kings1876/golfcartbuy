@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "Golf Cart Buy",
+  "url": "https://golfcartbuy.com",
+  "description": "Premium Golf Carts, Delivered Nationwide",
+  "skills": [
+    {
+      "name": "browse-products",
+      "type": "navigation",
+      "description": "Browse the full golf cart catalog by category",
+      "url": "https://golfcartbuy.com/shop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "search-catalog",
+      "type": "navigation",
+      "description": "Search products and blog articles",
+      "url": "https://golfcartbuy.com/search",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "submit-order",
+      "type": "commerce",
+      "description": "Submit an order request via web form. Minimum order $3,500. Accepts crypto payment (BTC, USDT) with a 10% discount.",
+      "url": "https://golfcartbuy.com/order",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "product-education",
+      "type": "content",
+      "description": "Buying guides and brand comparisons",
+      "url": "https://golfcartbuy.com/blog",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "contact",
+      "type": "support",
+      "description": "Contact for product questions or order support",
+      "url": "https://golfcartbuy.com/contact",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

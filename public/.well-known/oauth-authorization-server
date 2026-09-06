@@ -1,0 +1,29 @@
+{
+  "issuer": "https://golfcartbuy.com",
+  "authorization_endpoint": null,
+  "token_endpoint": null,
+  "jwks_uri": null,
+  "grant_types_supported": [],
+  "response_types_supported": [],
+  "scopes_supported": [],
+  "note": "Golf Cart Buy has no protected APIs. All resources are publicly accessible.",
+  "public_resources": [
+    "https://golfcartbuy.com/shop",
+    "https://golfcartbuy.com/blog",
+    "https://golfcartbuy.com/faq",
+    "https://golfcartbuy.com/llms.txt",
+    "https://golfcartbuy.com/.well-known/api-catalog",
+    "https://golfcartbuy.com/.well-known/agent-skills/index.json",
+    "https://golfcartbuy.com/.well-known/mcp/server-card.json"
+  ],
+  "agent_auth": {
+    "register_uri": null,
+    "identity_types_supported": [
+      "none"
+    ],
+    "credential_types_supported": [
+      "none"
+    ],
+    "notes": "No registration required. All content is publicly accessible to agents."
+  }
+}

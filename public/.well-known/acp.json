@@ -1,0 +1,38 @@
+{
+  "protocol": {
+    "name": "acp",
+    "version": "0.1.0"
+  },
+  "name": "Golf Cart Buy",
+  "description": "Golf Cart Buy is a USA-based retailer of new and used electric and gas golf carts, offering Club Car, EZGO, and Yamaha models with nationwide shipping.",
+  "api_base_url": "https://golfcartbuy.com",
+  "homepage": "https://golfcartbuy.com",
+  "transports": [
+    "https"
+  ],
+  "capabilities": {
+    "services": [
+      "product-catalog",
+      "blog",
+      "faq"
+    ],
+    "ordering": "human-assisted-web-form",
+    "payment_methods": [
+      "crypto-BTC",
+      "crypto-USDT"
+    ],
+    "currency": "USD",
+    "minimum_order_usd": 3500,
+    "free_shipping_threshold_usd": 0
+  },
+  "contact": {
+    "email": "koloonjo@gmail.com"
+  },
+  "legal": {
+    "age_restriction": "none",
+    "region": "United States",
+    "ships_to": "Nationwide (all 50 US states)",
+    "product_type": "Golf carts, golf cars, and golf cart accessories",
+    "compliance": "No claims beyond verified brand facts."
+  }
+}

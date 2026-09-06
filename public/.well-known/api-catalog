@@ -1,0 +1,23 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://golfcartbuy.com/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        {
+          "href": "https://golfcartbuy.com/faq"
+        }
+      ],
+      "title": "Golf Cart Buy — Premium Golf Carts, Delivered Nationwide"
+    },
+    {
+      "anchor": "https://golfcartbuy.com/shop",
+      "type": "text/html",
+      "title": "Golf Cart Buy Product Catalog"
+    },
+    {
+      "anchor": "https://golfcartbuy.com/blog",
+      "type": "text/html",
+      "title": "Golf Cart Buy Blog"
+    }
+  ]
+}

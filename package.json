@@ -1,0 +1,24 @@
+{
+  "name": "golfcartbuy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/gen-agent-files.mjs",
+    "build": "next build",
+    "build:static": "cross-env TARGET=static node scripts/gen-agent-files.mjs && cross-env TARGET=static next build",
+    "images": "node scripts/images.mjs",
+    "crosscheck": "node scripts/crosscheck.mjs",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.5.25",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "sharp": "^0.35.4"
+  }
+}
