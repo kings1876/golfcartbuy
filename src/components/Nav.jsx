@@ -1,15 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { SITE } from '@/config/site'
+import { SITE, CATEGORIES } from '@/config/site'
 
-const NAV_ITEMS = [
-  { href: '/shop/', label: 'Shop' },
-  { href: '/blog/', label: 'Blog' },
-  { href: '/about/', label: 'About' },
-  { href: '/contact/', label: 'Contact' },
-  { href: '/faq/', label: 'FAQ' },
-]
+const NAV_ITEMS = CATEGORIES.map((c) => ({ href: `/shop/${c.slug}/`, label: c.name }))
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -22,7 +16,7 @@ export default function Nav() {
           {SITE.name}
         </a>
 
-        <nav aria-label="Primary">
+        <nav aria-label="Product categories">
           <ul className="nav-links">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>

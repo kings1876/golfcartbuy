@@ -24,7 +24,7 @@
 
 ## D — Pages
 Shop, Blog, About, Contact, FAQ, plus Shipping/Refund/Privacy/Terms (legal), Order, Cart, Search.
-Menu order: Shop, Blog, About, Contact, FAQ.
+Menu: the six product categories (changed from Shop, Blog, About, Contact, FAQ); Blog/About/Contact/FAQ remain in the footer.
 
 ## E — Checkout & Payment
 - Ordering method: order form (web-based cart → order form, no live payment capture)
