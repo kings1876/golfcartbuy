@@ -15,7 +15,7 @@ export default function OrderPage() {
         <h1>Order Form</h1>
         <p>
           Fill out the form below to request your order. We&apos;ll confirm details and payment
-          instructions by email before finalizing.
+          instructions by email before finalising.
         </p>
         <OrderForm />
       </div>

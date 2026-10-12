@@ -1,6 +1,6 @@
 # Golf Cart Buy — project instructions
 
-Ecommerce site for a golf cart retailer. Next.js 15 (App Router), deployed to Vercel via GitHub. No client backend/CMS.
+Ecommerce site for a golf cart retailer selling in Australia (AUD, en-AU spelling: petrol, colour, finalise). Next.js 15 (App Router), deployed to Vercel via GitHub. No client backend/CMS.
 
 ## Non-negotiable
 No banned terms or required framings were specified at intake. Do not fabricate brand facts (awards, press, partnerships, milestones) beyond what's in "Brand facts" below. If a request would require breaking the above, stop and say so rather than complying.
@@ -27,9 +27,9 @@ Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.tx
 - `SITE.domain` is already set to `golfcartbuy.com` (live) — if it ever changes, edit that ONE line and rebuild; never find-and-replace across files.
 
 ## Brand facts (only these are true — never invent more)
-- Founded 2017, United States
-- Ships nationwide (all 50 US states), free shipping on every order
-- Minimum order: $3,500 USD
+- Founded 2017 (founding location NOT stated anywhere on the site — not yet supplied for the Australian version)
+- Sells to Australia, ships Australia-wide (all states and territories), free shipping on every order
+- Minimum order: $3,500 AUD
 - Payment: crypto only (BTC, USDT), 10% discount when paying with crypto
 - Categories: New Golf Carts, Used Golf Carts, Club Car, EZGO, Yamaha, Accessories & Parts
 No invented statistics, awards, press, or named clients. Ever.

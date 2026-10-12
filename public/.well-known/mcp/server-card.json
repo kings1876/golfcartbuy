@@ -3,7 +3,7 @@
   "serverInfo": {
     "name": "Golf Cart Buy",
     "version": "1.0.0",
-    "description": "Golf Cart Buy is a USA-based retailer of new and used electric and gas golf carts, offering Club Car, EZGO, and Yamaha models with nationwide shipping.",
+    "description": "Golf Cart Buy sells new and used electric and petrol golf carts in Australia, offering Club Car, EZGO, and Yamaha models with free Australia-wide shipping.",
     "homepage": "https://golfcartbuy.com",
     "contact": {
       "email": "koloonjo@gmail.com"
@@ -32,10 +32,10 @@
         "crypto-BTC",
         "crypto-USDT"
       ],
-      "currency": "USD",
+      "currency": "AUD",
       "minimumOrder": 3500,
       "freeShipping": "all orders",
-      "ships": "Nationwide (all 50 US states)"
+      "ships": "Australia-wide (all states and territories)"
     }
   },
   "legal": {

@@ -6,7 +6,7 @@ import { TruckIcon, BadgeIcon, WrenchIcon, CoinIcon } from '@/components/icons'
 export const metadata = {
   title: 'Golf Carts for Sale | New & Used Club Car, EZGO, Yamaha',
   description:
-    'Shop golf carts for sale from Golf Cart Buy — new and used electric and gas golf carts from Club Car, EZGO, and Yamaha, shipped free nationwide.',
+    'Shop golf carts for sale from Golf Cart Buy — new and used electric and petrol golf carts from Club Car, EZGO, and Yamaha, shipped free Australia-wide.',
   alternates: { canonical: `https://${SITE.domain}/` },
 }
 
@@ -21,11 +21,10 @@ export default function HomePage() {
       description: SITE.description,
       url: `https://${SITE.domain}/`,
       foundingDate: String(SITE.foundingYear),
-      foundingLocation: SITE.foundingLocation,
       address: { '@type': 'PostalAddress', addressCountry: SITE.address.country },
       areaServed: SITE.areaServed,
       numberOfItems: PRODUCTS.length,
-      knowsAbout: ['Electric golf carts', 'Gas golf carts', 'Club Car', 'EZGO', 'Yamaha', 'Golf cart accessories'],
+      knowsAbout: ['Electric golf carts', 'Petrol golf carts', 'Club Car', 'EZGO', 'Yamaha', 'Golf cart accessories'],
       priceRange: '$$',
       makesOffer: {
         '@type': 'AggregateOffer',
@@ -66,11 +65,11 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="container hero-content">
-          <h1>Golf Carts for Sale — New &amp; Used, Shipped Nationwide</h1>
+          <h1>Golf Carts for Sale — New &amp; Used, Shipped Australia-Wide</h1>
           <p>
-            {SITE.name} is a {SITE.foundingLocation}-based golf cart retailer founded in{' '}
-            {SITE.foundingYear}, offering new and used electric and gas golf carts from Club Car,
-            EZGO, and Yamaha with free shipping {SITE.shipsTo.toLowerCase()}.
+            {SITE.name} sells golf carts in Australia and was founded in{' '}
+            {SITE.foundingYear}, offering new and used electric and petrol golf carts from Club Car,
+            EZGO, and Yamaha with free shipping {SITE.shipsTo}.
           </p>
           <div className="hero-ctas">
             <a href="/shop/" className="btn btn-primary">Shop Golf Carts</a>
@@ -85,7 +84,7 @@ export default function HomePage() {
             <div className="trust-item">
               <div className="trust-icon" aria-hidden="true"><TruckIcon /></div>
               <strong>Free Shipping</strong>
-              <span>On every order, nationwide</span>
+              <span>On every order, Australia-wide</span>
             </div>
             <div className="trust-item">
               <div className="trust-icon" aria-hidden="true"><BadgeIcon /></div>
@@ -140,12 +139,12 @@ export default function HomePage() {
         <div className="container two-col">
           <div>
             <span className="eyebrow">About {SITE.name}</span>
-            <h2>A US-Based Golf Cart Retailer, Founded {SITE.foundingYear}</h2>
+            <h2>Golf Carts Delivered Australia-Wide, Since {SITE.foundingYear}</h2>
             <p>
-              {SITE.name} is a {SITE.foundingLocation}-based retailer specializing in new and used
-              electric and gas golf carts from Club Car, EZGO, and Yamaha. We ship {SITE.shipsTo.toLowerCase()}{' '}
+              {SITE.name} specialises in new and used
+              electric and petrol golf carts from Club Car, EZGO, and Yamaha. We ship {SITE.shipsTo}{' '}
               with no shipping charge, accept crypto payment with a {SITE.cryptoDiscountPercent}%
-              discount, and require a ${SITE.minOrderUsd.toLocaleString()} minimum order.
+              discount, and require a ${SITE.minOrder.toLocaleString()} minimum order.
             </p>
             <a href="/about/" className="btn btn-outline">Learn More About Us</a>
           </div>
@@ -153,9 +152,9 @@ export default function HomePage() {
             <h3>Why Buy From {SITE.name}?</h3>
             <ul>
               <li>New and used golf carts from Club Car, EZGO, and Yamaha</li>
-              <li>Free shipping on every order, nationwide</li>
+              <li>Free shipping on every order, Australia-wide</li>
               <li>{SITE.cryptoDiscountPercent}% discount when you pay with crypto</li>
-              <li>Electric and gas options across every category</li>
+              <li>Electric and petrol options across every category</li>
             </ul>
           </div>
         </div>

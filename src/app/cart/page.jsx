@@ -22,7 +22,7 @@ export default function CartPage() {
 
   const subtotal = lines.reduce((sum, l) => sum + l.product.price * l.qty, 0)
   const cryptoTotal = subtotal * (1 - SITE.cryptoDiscountPercent / 100)
-  const meetsMin = subtotal >= SITE.minOrderUsd
+  const meetsMin = subtotal >= SITE.minOrder
 
   return (
     <div className="section">
@@ -92,7 +92,7 @@ export default function CartPage() {
               <p className="form-note">Free shipping included on every order.</p>
               {!meetsMin && (
                 <p className="form-error">
-                  Minimum order is ${SITE.minOrderUsd.toLocaleString()}. Add more items to continue.
+                  Minimum order is ${SITE.minOrder.toLocaleString()}. Add more items to continue.
                 </p>
               )}
               <a

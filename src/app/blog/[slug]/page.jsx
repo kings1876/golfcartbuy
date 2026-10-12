@@ -43,7 +43,7 @@ export default function BlogPostPage({ params }) {
         <article style={{ maxWidth: 760 }}>
           <h1>{post.title}</h1>
           <p className="form-note">
-            {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            {new Date(post.date).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
           {post.body.map((para, i) => (
             <p key={i}>{para}</p>

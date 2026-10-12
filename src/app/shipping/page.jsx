@@ -13,22 +13,22 @@ export default function ShippingPage() {
       <div className="container">
         <Breadcrumbs items={[{ label: 'Shipping Policy' }]} />
         <h1>Shipping Policy</h1>
-        <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Free Shipping</h2>
         <p>
-          {SITE.name} provides free shipping on every order, ships {SITE.shipsTo.toLowerCase()},
+          {SITE.name} provides free shipping on every order, ships {SITE.shipsTo},
           with no minimum order size required to qualify beyond our standard{' '}
-          ${SITE.minOrderUsd.toLocaleString()} minimum order amount.
+          ${SITE.minOrder.toLocaleString()} minimum order amount.
         </p>
 
         <h2>Delivery Area</h2>
-        <p>We currently ship {SITE.shipsTo.toLowerCase()}.</p>
+        <p>We currently ship {SITE.shipsTo}. All prices are in Australian dollars (AUD).</p>
 
         <h2>Order Confirmation &amp; Delivery Timelines</h2>
         <p>
           After you submit an order request, we confirm availability, final pricing, and an
-          estimated delivery window by email before your order is finalized. Delivery timelines
+          estimated delivery window by email before your order is finalised. Delivery timelines
           vary by cart model, current inventory, and destination.
         </p>
 

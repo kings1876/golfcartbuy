@@ -13,17 +13,18 @@ export default function TermsPage() {
       <div className="container">
         <Breadcrumbs items={[{ label: 'Terms of Service' }]} />
         <h1>Terms of Service</h1>
-        <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Orders</h2>
         <p>
           Submitting our order form is a request to purchase, not a confirmed sale. An order is
           only final once we confirm price, availability, and payment details with you by email.
-          Our minimum order amount is ${SITE.minOrderUsd.toLocaleString()}.
+          Our minimum order amount is ${SITE.minOrder.toLocaleString()}.
         </p>
 
         <h2>Payment</h2>
         <p>
+          All prices are shown in Australian dollars (AUD).
           {SITE.name} currently accepts payment via cryptocurrency (Bitcoin and USDT). Orders
           paid with crypto receive a {SITE.cryptoDiscountPercent}% discount off the listed price.
           Payment instructions are provided after order confirmation.
@@ -38,7 +39,7 @@ export default function TermsPage() {
         <p>
           We aim to describe every golf cart and accessory accurately. Specifications and
           availability are subject to change; we will confirm exact details before your order is
-          finalized.
+          finalised.
         </p>
 
         <h2>Limitation of Liability</h2>

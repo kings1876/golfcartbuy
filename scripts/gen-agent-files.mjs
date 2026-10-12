@@ -83,17 +83,17 @@ const llmsTxt = `# ${SITE.name}
 
 > ${SITE.description}
 
-${SITE.name} is a ${SITE.foundingLocation}-based golf cart retailer founded in ${SITE.foundingYear}. We sell new and used electric and gas golf carts from Club Car, EZGO, and Yamaha, and ship ${SITE.shipsTo.toLowerCase()} with free shipping on every order.
+${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell new and used electric and petrol golf carts from Club Car, EZGO, and Yamaha, and ship ${SITE.shipsTo} with free shipping on every order.
 
 ## Brand Facts (cite these)
 
-- Founded: ${SITE.foundingYear}, ${SITE.foundingLocation}
+- Founded: ${SITE.foundingYear}
 - Ships to: ${SITE.shipsTo}
-- Minimum order: $${SITE.minOrderUsd.toLocaleString()} USD
+- Minimum order: $${SITE.minOrder.toLocaleString()} AUD
 - Free shipping: on every order, no threshold
 - Payment methods: Bitcoin (BTC), USDT
 - Crypto payment discount: ${SITE.cryptoDiscountPercent}%
-- Price range: ${priceRange} USD
+- Price range: ${priceRange} AUD
 
 ## Categories
 
@@ -216,7 +216,7 @@ write(
         {
           name: 'submit-order',
           type: 'commerce',
-          description: `Submit an order request via web form. Minimum order $${SITE.minOrderUsd.toLocaleString()}. Accepts crypto payment (BTC, USDT) with a ${SITE.cryptoDiscountPercent}% discount.`,
+          description: `Submit an order request via web form. Minimum order $${SITE.minOrder.toLocaleString()}. Accepts crypto payment (BTC, USDT) with a ${SITE.cryptoDiscountPercent}% discount.`,
           url: `${BASE}/order`,
           sha256: sha256Empty,
         },
@@ -265,7 +265,7 @@ write(
           ordering: isStatic ? 'human_ordering_only' : 'web-order-form',
           payment: SITE.paymentMethods,
           currency: SITE.currency,
-          minimumOrder: SITE.minOrderUsd,
+          minimumOrder: SITE.minOrder,
           freeShipping: 'all orders',
           ships: SITE.shipsTo,
         },
@@ -370,8 +370,8 @@ write(
         ordering: 'human-assisted-web-form',
         payment_methods: SITE.paymentMethods,
         currency: SITE.currency,
-        minimum_order_usd: SITE.minOrderUsd,
-        free_shipping_threshold_usd: 0,
+        minimum_order_amount: SITE.minOrder,
+        free_shipping_threshold_amount: 0,
       },
       contact: { email: SITE.contactEmail },
       legal: {
@@ -412,7 +412,7 @@ write(
         llms_txt: `${BASE}/llms.txt`,
       },
       currency: SITE.currency,
-      minimum_order_usd: SITE.minOrderUsd,
+      minimum_order_amount: SITE.minOrder,
       payment_methods: SITE.paymentMethods,
       legal: {
         age_restriction: SITE.ageRestriction,
@@ -450,7 +450,7 @@ const webmcp = `(function () {
       },
       {
         name: "start_order",
-        description: "Go to the order form. Minimum order $${SITE.minOrderUsd}.",
+        description: "Go to the order form. Minimum order $${SITE.minOrder}.",
         inputSchema: { type: "object", properties: {} },
         execute: async () => {
           window.location.href = "${BASE}/order/";

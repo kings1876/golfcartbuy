@@ -2,7 +2,7 @@
   "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
   "name": "Golf Cart Buy",
   "url": "https://golfcartbuy.com",
-  "description": "Premium Golf Carts, Delivered Nationwide",
+  "description": "Premium Golf Carts, Delivered Australia-Wide",
   "skills": [
     {
       "name": "browse-products",

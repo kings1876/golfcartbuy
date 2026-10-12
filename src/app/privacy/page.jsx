@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <div className="container">
         <Breadcrumbs items={[{ label: 'Privacy Policy' }]} />
         <h1>Privacy Policy</h1>
-        <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Information We Collect</h2>
         <p>

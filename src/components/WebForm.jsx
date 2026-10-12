@@ -74,7 +74,7 @@ export default function WebForm({ subject, thankYouPath, children, submitLabel =
       </button>
       {KEY_PENDING && (
         <p className="form-note">
-          Note: online submission is being finalized — you can also reach us directly.
+          Note: online submission is being finalised — you can also reach us directly.
         </p>
       )}
     </form>

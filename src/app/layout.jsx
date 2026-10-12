@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       <body>
         <a href="#main" className="skip-link">Skip to main content</a>
         <div className="announce">
-          Free shipping on every order &middot; {SITE.cryptoDiscountPercent}% off when you pay with crypto &middot; ${SITE.minOrderUsd.toLocaleString()} minimum order
+          Free shipping on every order &middot; {SITE.cryptoDiscountPercent}% off when you pay with crypto &middot; ${SITE.minOrder.toLocaleString()} minimum order
         </div>
         <Nav />
         <main id="main">{children}</main>

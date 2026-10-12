@@ -11,8 +11,8 @@
 ## B — Contact & Business
 - Contact email: koloonjo@gmail.com (placeholder — user's own account email; replace with real business inbox)
 - Phone: not provided
-- Location: USA
-- Currency: USD
+- Location / market: Australia (site localised from the original USA brief; founding location not stated)
+- Currency: AUD
 - Tax display: not applicable (crypto-only checkout, no tax collection implemented)
 
 ## C — Order Rules
@@ -49,7 +49,7 @@ New Golf Carts, Used Golf Carts, Club Car, EZGO, Yamaha, Accessories & Parts.
 
 ## J — SEO Keywords
 - Primary: golf carts for sale
-- Secondary: golf cart cars for sale, club car golf carts for sale, golf cart for sale, electric golf cars for sale, golf carts sale, golf carts for sale near me, new club car golf carts for sale, club car golf carts dealer, golf cart for sale Chicago, used golf carts for sale
+- Secondary: golf cart cars for sale, club car golf carts for sale, golf cart for sale, electric golf cars for sale, golf carts sale, golf carts for sale near me, new club car golf carts for sale, club car golf carts dealer, golf cart for sale Chicago [localised to AU cities], used golf carts for sale
 - Competitors: cartmarket.com, cartsgonewild.com
 
 ## K — Products
@@ -90,7 +90,7 @@ No. Pure static-content Next.js site (Vercel target, no D1/R2/Functions).
 
 ## Content Calendar (initial 4 posts shipped; next clusters queued)
 
-1. Electric vs. Gas Golf Carts (shipped)
+1. Electric vs. Petrol Golf Carts (shipped)
 2. Club Car vs. EZGO vs. Yamaha (shipped)
 3. New vs. Used Golf Carts (shipped)
 4. Golf Cart Buying Guide (shipped)
@@ -99,3 +99,8 @@ No. Pure static-content Next.js site (Vercel target, no D1/R2/Functions).
 
 ## Form Provider & Deploy Target Confirmation
 Web3Forms (default, works while domain settings finalize) + Vercel (GitHub auto-deploy), as documented above.
+
+## Australia localisation (applied later)
+- Currency AUD, locale en-AU, shipping Australia-wide, petrol instead of gas, Australian Consumer Law line on refund page.
+- Product prices were scaled ~1.5x from the original placeholder USD prices — placeholders, not real pricing.
+- Minimum order kept at 3,500 (now AUD). Not stated whether prices include GST.

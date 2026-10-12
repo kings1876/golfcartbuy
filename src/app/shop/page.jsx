@@ -6,7 +6,7 @@ import ProductCard from '@/components/ProductCard'
 export const metadata = {
   title: 'Shop Golf Carts for Sale | New & Used',
   description:
-    'Browse all golf carts for sale at Golf Cart Buy, including new and used electric and gas models from Club Car, EZGO, and Yamaha.',
+    'Browse all golf carts for sale at Golf Cart Buy, including new and used electric and petrol models from Club Car, EZGO, and Yamaha.',
   alternates: { canonical: `https://${SITE.domain}/shop/` },
 }
 

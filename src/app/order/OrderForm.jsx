@@ -56,7 +56,7 @@ export default function OrderForm() {
         </select>
       </div>
       <p className="form-note">
-        Minimum order: ${SITE.minOrderUsd.toLocaleString()}. Free shipping on every order.
+        Minimum order: ${SITE.minOrder.toLocaleString()}. Free shipping on every order.
       </p>
     </WebForm>
   )

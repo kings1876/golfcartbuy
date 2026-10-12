@@ -21,7 +21,7 @@ export default function ContactPage() {
           <p>
             Email: <EncodedMailto codes={[...SITE.contactEmail].map((c) => c.charCodeAt(0))} />
           </p>
-          <p>Location: {SITE.foundingLocation}. We ship {SITE.shipsTo.toLowerCase()}.</p>
+          <p>We ship {SITE.shipsTo}.</p>
         </div>
         <div>
           <ContactForm />

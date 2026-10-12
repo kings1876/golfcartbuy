@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
   title: 'Golf Cart Blog & Buying Guides',
-  description: 'Guides and comparisons to help you choose the right golf cart — electric vs. gas, brand comparisons, and new vs. used.',
+  description: 'Guides and comparisons to help you choose the right golf cart — electric vs. petrol, brand comparisons, and new vs. used.',
   alternates: { canonical: `https://${SITE.domain}/blog/` },
 }
 
@@ -21,7 +21,7 @@ export default function BlogIndexPage() {
               <div className="tile-body">
                 <h2 style={{ fontSize: '1.15rem' }}>{post.title}</h2>
                 <p>{post.excerpt}</p>
-                <p className="form-note">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <p className="form-note">{new Date(post.date).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
               </div>
             </a>
           ))}

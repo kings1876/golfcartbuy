@@ -13,7 +13,7 @@ export default function RefundPage() {
       <div className="container">
         <Breadcrumbs items={[{ label: 'Refund Policy' }]} />
         <h1>Refund Policy</h1>
-        <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Order Confirmation</h2>
         <p>
@@ -35,6 +35,13 @@ export default function RefundPage() {
           If your order arrives damaged, defective, or different from what you ordered, contact
           us within 48 hours of delivery with photos of the item, and we will work with you on a
           repair, replacement, or refund as appropriate.
+        </p>
+
+        <h2>Australian Consumer Law</h2>
+        <p>
+          Our goods come with guarantees that cannot be excluded under the Australian Consumer
+          Law. Nothing in this policy limits those rights, including your right to a repair,
+          replacement, or refund where a major failure occurs.
         </p>
 
         <p>

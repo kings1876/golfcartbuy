@@ -13,15 +13,15 @@
 | golf carts for sale near me | / | live (no city pages) |
 | new club car golf carts for sale | /shop/club-car/, /shop/new-golf-carts/ | live |
 | club car golf carts dealer | /shop/club-car/ | live |
-| golf cart for sale Chicago | /blog/golf-cart-buying-guide/ | live (mention only) |
+| golf cart for sale Sydney / Melbourne / Brisbane / Perth | /blog/golf-cart-buying-guide/ | live (mention only) |
 | used golf carts for sale | /shop/used-golf-carts/ | live |
 
 ## Blog clusters used
 
-1. electric-vs-gas-golf-carts — "electric vs gas", "electric golf cars for sale"
+1. electric-vs-gas-golf-carts — "electric vs petrol", "electric golf cars for sale"
 2. club-car-vs-ezgo-vs-yamaha — "club car golf carts dealer", brand comparison
 3. new-vs-used-golf-carts — "used golf carts for sale"
-4. golf-cart-buying-guide — general buying guide, "golf cart for sale Chicago" mention
+4. golf-cart-buying-guide — general buying guide, Australian city mentions (Sydney, Melbourne, Brisbane, Perth)
 
 ## Unused clusters (next posts)
 
@@ -34,3 +34,8 @@
 
 - No wholesale-related keywords (no wholesale page built per intake)
 - No financing-calculator keywords (financing page explicitly not needed per intake)
+
+## Australia notes
+
+- Original US keywords (e.g. "golf cart for sale Chicago") were localised to Australian cities. Consider AU-specific terms to research: "golf buggy for sale", "golf carts for sale Australia", "electric golf buggy", "street legal golf cart Australia".
+- Prices are AUD. Petrol replaces gas in copy.
