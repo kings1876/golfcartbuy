@@ -22,7 +22,7 @@
       },
       {
         name: "start_order",
-        description: "Go to the order form. Minimum order $3500.",
+        description: "Go to the order form. Minimum order $5250.",
         inputSchema: { type: "object", properties: {} },
         execute: async () => {
           window.location.href = "https://golfcartbuy.com/order/";

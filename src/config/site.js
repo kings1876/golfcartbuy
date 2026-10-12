@@ -21,9 +21,9 @@ export const SITE = {
   address: {
     country: 'AU',
   },
-  minOrder: 3500,
+  minOrder: 5250, // AUD — US$3,500 at the ~1.5 AUD/USD rate used for all prices
   freeShippingThreshold: 0, // free shipping on all orders
-  flatShippingFee: 15, // fallback fee, not currently applied since shipping is free site-wide
+  flatShippingFee: 23, // fallback fee, not currently applied since shipping is free site-wide
   cryptoDiscountPercent: 10,
   paymentMethods: ['crypto-BTC', 'crypto-USDT'],
   ageRestriction: 'none',
@@ -94,7 +94,7 @@ export const PRODUCTS = [
   {
     slug: 'club-car-onward-4-passenger-electric',
     name: 'Club Car Onward 4-Passenger Electric Golf Cart',
-    price: 8995,
+    price: 13495,
     category: 'new-golf-carts',
     brand: 'club-car',
     badge: 'Popular',
@@ -106,7 +106,7 @@ export const PRODUCTS = [
   {
     slug: 'club-car-tempo-2-passenger-electric',
     name: 'Club Car Tempo 2-Passenger Electric Golf Cart',
-    price: 7495,
+    price: 11195,
     category: 'new-golf-carts',
     brand: 'club-car',
     badge: 'New',
@@ -118,7 +118,7 @@ export const PRODUCTS = [
   {
     slug: 'ezgo-freedom-rxv-electric',
     name: 'EZGO Freedom RXV Electric Golf Cart',
-    price: 7995,
+    price: 11995,
     category: 'new-golf-carts',
     brand: 'ezgo',
     badge: 'Best Value',
@@ -130,7 +130,7 @@ export const PRODUCTS = [
   {
     slug: 'ezgo-express-s4-gas',
     name: 'EZGO Express S4 Petrol Golf Cart',
-    price: 9495,
+    price: 14195,
     category: 'new-golf-carts',
     brand: 'ezgo',
     badge: 'Premium',
@@ -142,7 +142,7 @@ export const PRODUCTS = [
   {
     slug: 'yamaha-drive2-quietech-efi-gas',
     name: 'Yamaha Drive2 QuieTech EFI Petrol Golf Cart',
-    price: 8495,
+    price: 12695,
     category: 'new-golf-carts',
     brand: 'yamaha',
     badge: 'none',
@@ -154,7 +154,7 @@ export const PRODUCTS = [
   {
     slug: 'used-club-car-precedent-electric',
     name: 'Used Club Car Precedent Electric Golf Cart (Refurbished)',
-    price: 5495,
+    price: 8195,
     category: 'used-golf-carts',
     brand: 'club-car',
     badge: 'Sale',
@@ -166,7 +166,7 @@ export const PRODUCTS = [
   {
     slug: 'used-ezgo-txt-gas',
     name: 'Used EZGO TXT Petrol Golf Cart (Refurbished)',
-    price: 4995,
+    price: 7495,
     category: 'used-golf-carts',
     brand: 'ezgo',
     badge: 'Sale',
@@ -178,7 +178,7 @@ export const PRODUCTS = [
   {
     slug: 'custom-6-passenger-electric-limo',
     name: 'Custom 6-Passenger Electric Golf Cart Limo',
-    price: 12995,
+    price: 19495,
     category: 'new-golf-carts',
     brand: 'club-car',
     badge: 'Premium',
@@ -190,7 +190,7 @@ export const PRODUCTS = [
   {
     slug: 'golf-cart-lift-kit-off-road-tire-package',
     name: 'Golf Cart Lift Kit & Off-Road Tire Package',
-    price: 1895,
+    price: 2795,
     category: 'accessories-parts',
     brand: '',
     badge: 'New',
@@ -254,7 +254,7 @@ export const POSTS = [
       'Buying a golf cart online is straightforward once you know what to check: passenger capacity, electric vs. petrol, new vs. used, and what is included with shipping. Golf Cart Buy ships golf carts Australia-wide, including to buyers looking for a golf cart for sale in Sydney, Melbourne, Brisbane, Perth and other major cities, at no extra shipping cost.',
       'Start by deciding how many passengers you need to carry regularly — 2-passenger carts are more affordable and easier to store, while 4- and 6-passenger carts suit families, resorts, and larger properties.',
       'Next, decide between electric and petrol (see our electric vs. petrol comparison) based on your typical use case and noise tolerance.',
-      'Golf Cart Buy accepts crypto payment (BTC and USDT) with a 10% discount applied, and has a $3,500 AUD minimum order. Our order form walks you through selecting your cart and confirming details before checkout.',
+      'Golf Cart Buy accepts crypto payment (BTC and USDT) with a 10% discount applied, and has a $5,250 AUD minimum order. Our order form walks you through selecting your cart and confirming details before checkout.',
     ],
     relatedProducts: ['club-car-onward-4-passenger-electric', 'used-ezgo-txt-gas'],
   },
@@ -267,7 +267,7 @@ export const FAQS = [
   },
   {
     q: 'What is the minimum order amount?',
-    a: 'The minimum order amount at Golf Cart Buy is $3,500 AUD, which covers the vast majority of our golf cart and accessory listings.',
+    a: 'The minimum order amount at Golf Cart Buy is $5,250 AUD, which covers the vast majority of our golf cart and accessory listings.',
   },
   {
     q: 'Do you offer free shipping?',

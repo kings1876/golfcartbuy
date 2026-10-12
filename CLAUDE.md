@@ -29,7 +29,7 @@ Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.tx
 ## Brand facts (only these are true — never invent more)
 - Founded 2017 (founding location NOT stated anywhere on the site — not yet supplied for the Australian version)
 - Sells to Australia, ships Australia-wide (all states and territories), free shipping on every order
-- Minimum order: $3,500 AUD
+- Minimum order: $5,250 AUD
 - Payment: crypto only (BTC, USDT), 10% discount when paying with crypto
 - Categories: New Golf Carts, Used Golf Carts, Club Car, EZGO, Yamaha, Accessories & Parts
 No invented statistics, awards, press, or named clients. Ever.

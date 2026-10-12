@@ -16,7 +16,7 @@
 - Tax display: not applicable (crypto-only checkout, no tax collection implemented)
 
 ## C — Order Rules
-- Minimum order: $3,500
+- Minimum order: $5,250 AUD (US$3,500 converted at ~1.5)
 - Free shipping: on all orders (no threshold)
 - Flat shipping fee: $15 (fallback constant, unused since shipping is free site-wide)
 - Crypto discount: 10%
@@ -53,7 +53,7 @@ New Golf Carts, Used Golf Carts, Club Car, EZGO, Yamaha, Accessories & Parts.
 - Competitors: cartmarket.com, cartsgonewild.com
 
 ## K — Products
-9 starter products authored by Claude (none were supplied at intake) — see `src/config/site.js` PRODUCTS. All priced above the $3,500 minimum except the accessory bundle (min order applies to order total, not per item).
+9 starter products authored by Claude (none were supplied at intake) — see `src/config/site.js` PRODUCTS. All priced above the $5,250 AUD minimum except the accessory bundle (min order applies to order total, not per item).
 
 ## L — Forms
 - Provider: web3forms (key pending — see README "Live placeholders")
@@ -102,5 +102,5 @@ Web3Forms (default, works while domain settings finalize) + Vercel (GitHub auto-
 
 ## Australia localisation (applied later)
 - Currency AUD, locale en-AU, shipping Australia-wide, petrol instead of gas, Australian Consumer Law line on refund page.
-- Product prices were scaled ~1.5x from the original placeholder USD prices — placeholders, not real pricing.
-- Minimum order kept at 3,500 (now AUD). Not stated whether prices include GST.
+- Product prices converted from the original placeholder USD prices at ~1.5 AUD/USD — still placeholders, not real pricing.
+- Minimum order converted from US$3,500 to A$5,250 at ~1.5 AUD/USD; product prices use the same rate. Not stated whether prices include GST.

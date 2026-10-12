@@ -34,7 +34,7 @@
     "llms_txt": "https://golfcartbuy.com/llms.txt"
   },
   "currency": "AUD",
-  "minimum_order_amount": 3500,
+  "minimum_order_amount": 5250,
   "payment_methods": [
     "crypto-BTC",
     "crypto-USDT"

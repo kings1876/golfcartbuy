@@ -33,7 +33,7 @@
         "crypto-USDT"
       ],
       "currency": "AUD",
-      "minimumOrder": 3500,
+      "minimumOrder": 5250,
       "freeShipping": "all orders",
       "ships": "Australia-wide (all states and territories)"
     }

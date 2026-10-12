@@ -21,7 +21,7 @@
     {
       "name": "submit-order",
       "type": "commerce",
-      "description": "Submit an order request via web form. Minimum order $3,500. Accepts crypto payment (BTC, USDT) with a 10% discount.",
+      "description": "Submit an order request via web form. Minimum order $5,250. Accepts crypto payment (BTC, USDT) with a 10% discount.",
       "url": "https://golfcartbuy.com/order",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
