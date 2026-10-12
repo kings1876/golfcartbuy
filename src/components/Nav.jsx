@@ -1,12 +1,37 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { SITE, CATEGORIES } from '@/config/site'
 
 const NAV_ITEMS = CATEGORIES.map((c) => ({ href: `/shop/${c.slug}/`, label: c.name }))
 
+const MORE_ITEMS = [
+  { href: '/blog/', label: 'Blog' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+  { href: '/faq/', label: 'FAQ' },
+]
+
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const [moreOpen, setMoreOpen] = useState(false)
+  const moreRef = useRef(null)
+
+  useEffect(() => {
+    if (!moreOpen) return
+    const onDown = (e) => {
+      if (moreRef.current && !moreRef.current.contains(e.target)) setMoreOpen(false)
+    }
+    const onKey = (e) => {
+      if (e.key === 'Escape') setMoreOpen(false)
+    }
+    document.addEventListener('mousedown', onDown)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('mousedown', onDown)
+      document.removeEventListener('keydown', onKey)
+    }
+  }, [moreOpen])
 
   return (
     <header className="nav">
@@ -23,6 +48,25 @@ export default function Nav() {
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
+            <li className="more-menu" ref={moreRef}>
+              <button
+                type="button"
+                className="more-toggle"
+                aria-expanded={moreOpen}
+                aria-haspopup="true"
+                aria-controls="more-list"
+                onClick={() => setMoreOpen((v) => !v)}
+              >
+                More <span className="more-caret" aria-hidden="true">▾</span>
+              </button>
+              <ul id="more-list" className={`more-list${moreOpen ? ' open' : ''}`}>
+                {MORE_ITEMS.map((item) => (
+                  <li key={item.href}>
+                    <a href={item.href} onClick={() => setMoreOpen(false)}>{item.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </li>
           </ul>
         </nav>
 
@@ -45,6 +89,12 @@ export default function Nav() {
       <div className={`mobile-menu${open ? ' open' : ''}`}>
         <ul>
           {NAV_ITEMS.map((item) => (
+            <li key={item.href}>
+              <a href={item.href} onClick={() => setOpen(false)}>{item.label}</a>
+            </li>
+          ))}
+          <li className="mobile-more-heading">More</li>
+          {MORE_ITEMS.map((item) => (
             <li key={item.href}>
               <a href={item.href} onClick={() => setOpen(false)}>{item.label}</a>
             </li>

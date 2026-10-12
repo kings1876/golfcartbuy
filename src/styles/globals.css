@@ -139,6 +139,15 @@ button { font-family: inherit; cursor: pointer; }
 .brand-mark { width: 38px; height: 38px; border-radius: 6px; background: var(--green-dark); display: flex; align-items: center; justify-content: center; color: var(--gold); font-weight: 700; font-family: var(--font-display); border: 1px solid var(--gold); }
 .nav-links { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
 .nav-links a { color: var(--ink); font-weight: 600; font-size: 0.93rem; white-space: nowrap; }
+.more-menu { position: relative; }
+.more-toggle { background: none; border: none; padding: 0; font: inherit; font-weight: 600; font-size: 0.93rem; color: var(--ink); cursor: pointer; white-space: nowrap; min-height: 44px; }
+.more-toggle:hover { color: var(--gold-dark); }
+.more-caret { font-size: 0.75rem; margin-left: 2px; }
+.more-list { display: none; position: absolute; right: 0; top: calc(100% - 4px); min-width: 160px; list-style: none; margin: 0; padding: 8px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); z-index: 150; }
+.more-list.open { display: block; }
+.more-list a { display: block; padding: 10px 12px; border-radius: 6px; font-weight: 600; font-size: 0.93rem; white-space: nowrap; }
+.more-list a:hover { background: var(--bg-tint); text-decoration: none; }
+.mobile-more-heading { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold-dark); padding-top: 6px; border-top: 1px solid var(--border); }
 .nav-actions { display: flex; align-items: center; gap: 14px; }
 .cart-link { position: relative; font-weight: 700; }
 .cart-count { background: var(--gold); color: var(--green-dark); border-radius: 999px; font-size: 0.7rem; padding: 1px 6px; margin-left: 4px; }
