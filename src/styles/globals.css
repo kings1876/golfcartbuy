@@ -186,6 +186,11 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
 
+/* Category grids: three columns on desktop */
+.grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 980px) { .grid.grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid.grid-3 { grid-template-columns: 1fr; } }
+
 .tile {
   display: block;
   background: #fff;

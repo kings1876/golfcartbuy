@@ -112,7 +112,7 @@ export default function HomePage() {
             <h2>Find the Right Golf Cart</h2>
             <p>Browse new and used golf carts, or shop directly by brand.</p>
           </div>
-          <div className="grid">
+          <div className="grid grid-3">
             {CATEGORIES.map((c) => (
               <CategoryTile key={c.slug} category={c} />
             ))}

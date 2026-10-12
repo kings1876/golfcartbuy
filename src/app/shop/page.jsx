@@ -22,7 +22,7 @@ export default function ShopPage() {
         </p>
 
         <h2 style={{ marginTop: 40 }}>Shop by Category</h2>
-        <div className="grid">
+        <div className="grid grid-3">
           {CATEGORIES.map((c) => (
             <CategoryTile key={c.slug} category={c} />
           ))}
