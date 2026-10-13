@@ -50,14 +50,3 @@ for (const p of PRODUCTS) {
     console.log('wrote', img)
   }
 }
-
-// generic category / hero placeholders
-const generic = {
-  'hero.svg': 'Golf Cart Buy',
-  'about.svg': 'Golf Cart Buy — About',
-  'og-default.svg': 'Golf Cart Buy',
-}
-for (const [file, label] of Object.entries(generic)) {
-  fs.writeFileSync(path.join(outDir, file), svgFor(label))
-  console.log('wrote', file)
-}

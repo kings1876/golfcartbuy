@@ -49,6 +49,7 @@ export const NAV = ['shop', 'blog', 'about', 'contact', 'faq']
 export const CATEGORIES = [
   {
     slug: 'new-golf-carts',
+    image: 'e-z-go-rxv-fleet.webp',
     name: 'New Golf Carts',
     description:
       'New golf carts, currently E-Z-GO Freedom RXV and RXV Fleet models, in electric and petrol, shipped Australia-wide.',
@@ -56,6 +57,7 @@ export const CATEGORIES = [
   },
   {
     slug: 'used-golf-carts',
+    image: 'refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow.webp',
     name: 'Used Golf Carts',
     description:
       'Used golf carts listed with their year, condition and what is included.',
@@ -63,6 +65,7 @@ export const CATEGORIES = [
   },
   {
     slug: 'club-car',
+    image: 'refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange.webp',
     name: 'Club Car',
     description:
       'Used and refurbished Club Car golf carts, including the Tempo, Onward and Ranger.',
@@ -70,6 +73,7 @@ export const CATEGORIES = [
   },
   {
     slug: 'ezgo',
+    image: 'e-z-go-rxv-freedom-4-seater.webp',
     name: 'EZGO',
     description:
       'New E-Z-GO golf carts, including the Freedom RXV and RXV Fleet lines, in electric and petrol.',
@@ -77,6 +81,7 @@ export const CATEGORIES = [
   },
   {
     slug: 'yamaha',
+    image: 'yamaha-drive2-quietech-efi-2022-evergreen.webp',
     name: 'Yamaha',
     description: 'Yamaha golf carts, including the Drive2 QuieTech EFI line.',
     subcategories: [],

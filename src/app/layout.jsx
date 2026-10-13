@@ -17,13 +17,13 @@ export const metadata = {
     title: `${SITE.name} | Golf Carts for Sale`,
     description: SITE.description,
     url: `https://${SITE.domain}/`,
-    images: ['/images/og-default.svg'],
+    images: ['/images/og-default.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${SITE.name} | Golf Carts for Sale`,
     description: SITE.description,
-    images: ['/images/og-default.svg'],
+    images: ['/images/og-default.jpg'],
   },
   alternates: {
     canonical: `https://${SITE.domain}/`,

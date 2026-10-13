@@ -1,10 +1,15 @@
 import { CartIcon } from './icons'
+import SmartImage from './SmartImage'
 
 export default function CategoryTile({ category }) {
   return (
     <a href={`/shop/${category.slug}/`} className="tile category-tile">
       <div className="tile-media">
-        <div className="category-tile-icon" aria-hidden="true"><CartIcon /></div>
+        {category.image ? (
+          <SmartImage src={category.image} alt={`${category.name} golf carts`} />
+        ) : (
+          <div className="category-tile-icon" aria-hidden="true"><CartIcon /></div>
+        )}
       </div>
       <div className="tile-body">
         <h3 style={{ fontSize: '1.05rem', margin: 0 }}>{category.name}</h3>
