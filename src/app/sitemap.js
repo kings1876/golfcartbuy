@@ -1,4 +1,4 @@
-import { SITE, CATEGORIES, PRODUCTS, POSTS } from '@/config/site'
+import { SITE, ACTIVE_CATEGORIES, PRODUCTS, POSTS } from '@/config/site'
 
 export default function sitemap() {
   const base = `https://${SITE.domain}`
@@ -23,7 +23,7 @@ export default function sitemap() {
     lastModified: now,
   }))
 
-  const categoryPages = CATEGORIES.map((c) => ({
+  const categoryPages = ACTIVE_CATEGORIES.map((c) => ({
     url: `${base}/shop/${c.slug}/`,
     lastModified: now,
   }))

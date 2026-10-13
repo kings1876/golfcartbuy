@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { SITE, CATEGORIES } from '@/config/site'
+import { SITE, ACTIVE_CATEGORIES } from '@/config/site'
 
-const NAV_ITEMS = CATEGORIES.map((c) => ({ href: `/shop/${c.slug}/`, label: c.name }))
+const NAV_ITEMS = ACTIVE_CATEGORIES.map((c) => ({ href: `/shop/${c.slug}/`, label: c.name }))
 
 const MORE_ITEMS = [
   { href: '/blog/', label: 'Blog' },

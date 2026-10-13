@@ -53,7 +53,7 @@ New Golf Carts, Used Golf Carts, Club Car, EZGO, Yamaha, Accessories & Parts.
 - Competitors: cartmarket.com, cartsgonewild.com
 
 ## K — Products
-9 starter products authored by Claude (none were supplied at intake) — see `src/config/site.js` PRODUCTS. All priced above the $5,250 AUD minimum except the accessory bundle (min order applies to order total, not per item).
+The original 9 invented placeholder products were deleted. Replaced with 7 used Yamaha Drive2 listings (year, colour, condition, price in AUD, inclusions) taken from https://www.yamahagolfcars.com.au/used.html at the user's request on 2026-10-13. Descriptions are re-worded; photos are placeholders; the dealer's warranty terms were not copied. Ownership/supply arrangement for this stock is unconfirmed — verify before taking orders.
 
 ## L — Forms
 - Provider: web3forms (key pending — see README "Live placeholders")

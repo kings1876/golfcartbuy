@@ -1,12 +1,12 @@
-import { SITE, CATEGORIES, PRODUCTS } from '@/config/site'
+import { SITE, ACTIVE_CATEGORIES, PRODUCTS } from '@/config/site'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CategoryTile from '@/components/CategoryTile'
 import ProductCard from '@/components/ProductCard'
 
 export const metadata = {
-  title: 'Shop Golf Carts for Sale | New & Used',
+  title: 'Shop Used Golf Carts for Sale | Yamaha Drive2',
   description:
-    'Browse all golf carts for sale at Golf Cart Buy, including new and used electric and petrol models from Club Car, EZGO, and Yamaha.',
+    'Browse used Yamaha Drive2 golf carts for sale at Golf Cart Buy, in electric and petrol, shipped free Australia-wide.',
   alternates: { canonical: `https://${SITE.domain}/shop/` },
 }
 
@@ -17,13 +17,12 @@ export default function ShopPage() {
         <Breadcrumbs items={[{ label: 'Shop' }]} />
         <h1>Golf Carts for Sale</h1>
         <p>
-          Browse our full range of new and used golf carts for sale, or shop directly by brand:
-          Club Car, EZGO, and Yamaha.
+          Browse our current used Yamaha Drive2 golf carts for sale, in electric and petrol.
         </p>
 
         <h2 style={{ marginTop: 40 }}>Shop by Category</h2>
         <div className="grid grid-3">
-          {CATEGORIES.map((c) => (
+          {ACTIVE_CATEGORIES.map((c) => (
             <CategoryTile key={c.slug} category={c} />
           ))}
         </div>

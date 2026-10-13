@@ -4,7 +4,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import { fileURLToPath } from 'node:url'
-import { SITE, CATEGORIES, PRODUCTS } from '../src/config/site.js'
+import { SITE, ACTIVE_CATEGORIES, PRODUCTS } from '../src/config/site.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -83,7 +83,7 @@ const llmsTxt = `# ${SITE.name}
 
 > ${SITE.description}
 
-${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell new and used electric and petrol golf carts from Club Car, EZGO, and Yamaha, and ship ${SITE.shipsTo} with free shipping on every order.
+${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell used Yamaha Drive2 electric and petrol golf carts, and ship ${SITE.shipsTo} with free shipping on every order.
 
 ## Brand Facts (cite these)
 
@@ -97,11 +97,11 @@ ${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYea
 
 ## Categories
 
-${CATEGORIES.map((c) => `- [${c.name}](${BASE}/shop/${c.slug}/): ${c.description}`).join('\n')}
+${ACTIVE_CATEGORIES.map((c) => `- [${c.name}](${BASE}/shop/${c.slug}/): ${c.description}`).join('\n')}
 
 ## Key Pages
 
-- [Shop All Golf Carts](${BASE}/shop/): Full catalog of new and used golf carts
+- [Shop All Golf Carts](${BASE}/shop/): Current used golf cart listings
 - [Blog](${BASE}/blog/): Buying guides and brand comparisons
 - [About](${BASE}/about/): Company facts and how ordering works
 - [FAQ](${BASE}/faq/): Common questions about ordering, shipping, and payment

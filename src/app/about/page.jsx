@@ -1,9 +1,9 @@
-import { SITE, CATEGORIES } from '@/config/site'
+import { SITE, ACTIVE_CATEGORIES } from '@/config/site'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
   title: 'About Golf Cart Buy',
-  description: `${SITE.name} sells new and used golf carts in Australia, founded in ${SITE.foundingYear}. Learn about how we operate, what we sell, and where we ship.`,
+  description: `${SITE.name} sells used Yamaha golf carts in Australia, founded in ${SITE.foundingYear}. Learn about how we operate, what we sell, and where we ship.`,
   alternates: { canonical: `https://${SITE.domain}/about/` },
 }
 
@@ -28,37 +28,37 @@ export default function AboutPage() {
         <Breadcrumbs items={[{ label: 'About' }]} />
         <h1>About {SITE.name}</h1>
         <p>
-          {SITE.name} sells new and used golf carts in Australia and was
+          {SITE.name} sells used Yamaha Drive2 golf carts in Australia and was
           founded in {SITE.foundingYear}. We focus on one thing: making it straightforward to
-          find and order a golf cart online, whether you want a brand-new electric cart or a
-          refurbished used petrol cart, and have it shipped to your door.
+          find and order a golf cart online, whether you want an electric cart or a petrol cart,
+          and have it shipped to your door.
         </p>
 
         <h2>What We Sell</h2>
         <p>
-          We carry new and used golf carts across the two most common power types — electric and
-          petrol — from three of the most established manufacturers in the industry: Club Car, EZGO,
-          and Yamaha. Our current categories include:
+          Our current stock is used Yamaha Drive2 golf carts, in both electric and petrol power
+          types. Each listing shows the year, colour, condition and what is included. Our current
+          categories include:
         </p>
         <ul>
-          {CATEGORIES.map((c) => (
+          {ACTIVE_CATEGORIES.map((c) => (
             <li key={c.slug}>
               <strong>{c.name}</strong> — {c.description}
             </li>
           ))}
         </ul>
         <p>
-          Whether you are searching for club car golf carts for sale, an electric golf car for a
-          gated community, or a used golf cart at a lower price point, our shop is organized so
-          you can browse by category or go straight to a specific brand.
+          Whether you are searching for an electric golf car for a gated community or a used
+          golf cart at a lower price point, you can browse our categories or go straight to the
+          shop.
         </p>
 
         <h2>New vs. Used</h2>
         <p>
-          New golf carts ship unused and give you the longest possible service life before any
-          major component needs replacing. Used golf carts sold through {SITE.name} are inspected
-          and refurbished before listing, which lets us offer a lower price point for buyers who
-          don&apos;t need the latest model year or who want a second or backup cart.
+          New golf carts are unused and give you the longest possible service life before any
+          major component needs replacing. Used golf carts, which is what we currently list, cost
+          less and suit buyers who don&apos;t need the latest model year or who want a second or
+          backup cart. Every listing states its condition and what is included.
         </p>
 
         <h2>Electric vs. Petrol</h2>
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <h2>Where We Ship</h2>
         <p>
           {SITE.name} ships {SITE.shipsTo}, with free shipping included on every
-          order regardless of order size. This applies to both new and used golf carts and to
+          order regardless of order size. This applies to every golf cart and to
           accessories and parts ordered on their own.
         </p>
 

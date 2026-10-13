@@ -1,11 +1,14 @@
 import { notFound } from 'next/navigation'
-import { SITE, CATEGORIES, PRODUCTS } from '@/config/site'
+import { SITE, CATEGORIES, ACTIVE_CATEGORIES, PRODUCTS } from '@/config/site'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ProductCard from '@/components/ProductCard'
 
 export function generateStaticParams() {
-  return CATEGORIES.map((c) => ({ cat: c.slug }))
+  return ACTIVE_CATEGORIES.map((c) => ({ cat: c.slug }))
 }
+
+// Categories with no products yet are not routable.
+export const dynamicParams = false
 
 export function generateMetadata({ params }) {
   const category = CATEGORIES.find((c) => c.slug === params.cat)

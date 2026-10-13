@@ -5,7 +5,7 @@ import { spawn, execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { SITE, PRODUCTS, CATEGORIES, POSTS } from '../src/config/site.js'
+import { SITE, PRODUCTS, ACTIVE_CATEGORIES as CATEGORIES, POSTS } from '../src/config/site.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -210,9 +210,9 @@ async function main() {
   try {
     await checkPage('/')
     await checkPage('/shop/')
-    await checkPage('/shop/new-golf-carts/')
-    await checkPage('/shop/club-car/')
-    await checkPage('/product/club-car-onward-4-passenger-electric/')
+    await checkPage(`/shop/${CATEGORIES[0].slug}/`)
+    await checkPage(`/shop/${CATEGORIES[1].slug}/`)
+    await checkPage(`/product/${PRODUCTS[0].slug}/`)
     await checkPage('/blog/')
     await checkPage('/blog/electric-vs-gas-golf-carts/')
     await checkPage('/about/')

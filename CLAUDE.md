@@ -31,5 +31,6 @@ Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.tx
 - Sells to Australia, ships Australia-wide (all states and territories), free shipping on every order
 - Minimum order: $5,250 AUD
 - Payment: crypto only (BTC, USDT), 10% discount when paying with crypto
-- Categories: New Golf Carts, Used Golf Carts, Club Car, EZGO, Yamaha, Accessories & Parts
+- Current stock: 7 used Yamaha Drive2 golf carts (electric and petrol), listed from a third-party dealer page (Yamaha Golf Cars Australia, yamahagolfcars.com.au/used.html) at the user's request. Facts only; descriptions rewritten; no photos copied; the dealer's 3-month warranty was NOT carried over.
+- Categories with no products are hidden from nav, grids, sitemap and llms.txt (ACTIVE_CATEGORIES in site.js); they return after products are added.
 No invented statistics, awards, press, or named clients. Ever.

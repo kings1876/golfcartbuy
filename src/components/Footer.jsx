@@ -1,4 +1,4 @@
-import { SITE } from '@/config/site'
+import { SITE, ACTIVE_CATEGORIES } from '@/config/site'
 import EncodedMailto from './EncodedMailto'
 
 export default function Footer() {
@@ -16,9 +16,9 @@ export default function Footer() {
           <h4>Shop</h4>
           <ul>
             <li><a href="/shop/">All Golf Carts</a></li>
-            <li><a href="/shop/new-golf-carts/">New Golf Carts</a></li>
-            <li><a href="/shop/used-golf-carts/">Used Golf Carts</a></li>
-            <li><a href="/shop/accessories-parts/">Accessories &amp; Parts</a></li>
+            {ACTIVE_CATEGORIES.map((c) => (
+              <li key={c.slug}><a href={`/shop/${c.slug}/`}>{c.name}</a></li>
+            ))}
           </ul>
         </div>
         <div className="footer-col">

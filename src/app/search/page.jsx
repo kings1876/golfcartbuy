@@ -35,7 +35,7 @@ export default function SearchPage() {
             type="search"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="e.g. Club Car, electric, used"
+            placeholder="e.g. Yamaha, electric, petrol"
           />
         </div>
 
