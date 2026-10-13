@@ -308,7 +308,7 @@ th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border)
 .page-bar .breadcrumbs { margin-bottom: 18px; }
 .page-lead { color: #d6d3d1; font-size: 1.06rem; max-width: 720px; margin: 0; }
 
-.prose { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 40px 44px; max-width: 880px; box-shadow: var(--shadow); }
+.prose { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 40px 44px; max-width: 880px; margin-left: auto; margin-right: auto; box-shadow: var(--shadow); }
 .prose h2 { font-size: 1.55rem; margin-top: 1.8em; }
 .prose h2:first-child, .prose > p:first-child + h2 { margin-top: 1.2em; }
 .prose p, .prose li { color: var(--ink-soft); }
