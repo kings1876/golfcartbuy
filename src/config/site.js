@@ -101,7 +101,7 @@ export const PRODUCTS = [
     short: '2024 Yamaha Drive2 QuieTech EFI petrol golf car in Evergreen, excellent condition.',
     description:
       'A 2024 Yamaha Drive2 QuieTech EFI petrol golf car in Evergreen, in excellent condition. Includes a full service, a new fold-down windscreen, a spare key, your choice of 8 inch wheel trims (gold, silver, white or chrome) and 2 sand bucket rings.',
-    images: ['yamaha-drive2-quietech-efi-2024-evergreen.svg'],
+    images: ['yamaha-drive2-quietech-efi-2024-evergreen.webp'],
   },
   {
     slug: 'yamaha-drive2-quietech-efi-2022-evergreen',
@@ -113,7 +113,7 @@ export const PRODUCTS = [
     short: '2022 Yamaha Drive2 QuieTech EFI petrol golf car in Evergreen, excellent condition.',
     description:
       'A 2022 Yamaha Drive2 QuieTech EFI petrol golf car in Evergreen, in excellent condition. Includes a full service, new battery, dry mesh seat covers, gold 8 inch wheel trims, a new fold-down windscreen, a sand bottle, a cooler box and a spare key.',
-    images: ['yamaha-drive2-quietech-efi-2022-evergreen.svg'],
+    images: ['yamaha-drive2-quietech-efi-2022-evergreen.webp'],
   },
   {
     slug: 'yamaha-drive2-quietech-2018-moonstone-silver',
@@ -125,7 +125,7 @@ export const PRODUCTS = [
     short: '2018 Yamaha Drive2 QuieTech petrol golf car in Moonstone Silver, good condition.',
     description:
       'A 2018 Yamaha Drive2 QuieTech petrol golf car in Moonstone Silver, in good condition. Includes a full service, new battery, wheel trims (four colours available), a fold-down windscreen, a sand bucket ring and a spare key.',
-    images: ['yamaha-drive2-quietech-2018-moonstone-silver.svg'],
+    images: ['yamaha-drive2-quietech-2018-moonstone-silver.webp'],
   },
   {
     slug: 'yamaha-drive2-ac-electric-2022-white',
@@ -149,7 +149,7 @@ export const PRODUCTS = [
     short: '2022 white Yamaha Drive2 QuieTech petrol golf car in very good condition.',
     description:
       'A 2022 white Yamaha Drive2 QuieTech petrol golf car in very good condition. Includes a full service, new battery, dry mesh seat covers, gold 8 inch wheel trims, a fold-down windscreen, a sand bucket ring and a spare key. Note: there is a slight crack in the bagwell.',
-    images: ['yamaha-drive2-quietech-2022-white.svg'],
+    images: ['yamaha-drive2-quietech-2022-white.webp'],
   },
   {
     slug: 'yamaha-drive2-quietech-efi-2022-bronze-metallic',
