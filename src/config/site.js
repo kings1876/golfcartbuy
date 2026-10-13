@@ -137,7 +137,7 @@ export const PRODUCTS = [
     short: '2022 white Yamaha Drive2 AC 48V electric golf car with a new set of Trojan T875 batteries.',
     description:
       'A 2022 white Yamaha Drive2 AC 48V electric golf car in excellent condition, with a new set of Trojan T875 batteries. Includes a full service, charger, 8 inch silver wheel trims, a fold-down windscreen, a sand bucket ring and a spare key.',
-    images: ['yamaha-drive2-ac-electric-2022-white.svg'],
+    images: ['yamaha-drive2-ac-electric-2022-white.webp'],
   },
   {
     slug: 'yamaha-drive2-quietech-2022-white',
@@ -161,7 +161,7 @@ export const PRODUCTS = [
     short: '2022 Yamaha Drive2 QuieTech EFI petrol golf car in Bronze Metallic, very good condition.',
     description:
       'A 2022 Yamaha Drive2 QuieTech EFI petrol golf car in Bronze Metallic, in very good condition. Includes a full service, a new seat, a fold-down windscreen, a spare key, your choice of 8 inch wheel trims (gold, silver, white or chrome) and 2 sand bucket rings.',
-    images: ['yamaha-drive2-quietech-efi-2022-bronze-metallic.svg'],
+    images: ['yamaha-drive2-quietech-efi-2022-bronze-metallic.webp'],
   },
   {
     slug: 'e-z-go-rxv-freedom-2-seater',
