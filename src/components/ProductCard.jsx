@@ -1,18 +1,25 @@
 import SmartImage from './SmartImage'
 
 export default function ProductCard({ product }) {
+  const tagline = [product.condition, product.brandName, product.power].filter(Boolean).join(' · ')
   return (
-    <a href={`/product/${product.slug}/`} className="tile">
+    <a href={`/product/${product.slug}/`} className="tile product-tile">
       <div className="tile-media">
         <SmartImage src={product.images[0]} alt={product.name} />
+        {product.badge && product.badge !== 'none' && product.badge.toLowerCase() !== (product.condition || '').toLowerCase() && (
+          <span className="tile-badge tile-badge-float">{product.badge}</span>
+        )}
       </div>
       <div className="tile-body">
-        {product.badge && product.badge !== 'none' && (
-          <span className="tile-badge">{product.badge}</span>
-        )}
-        <h3 style={{ fontSize: '1.05rem', margin: 0 }}>{product.name}</h3>
-        <p style={{ fontSize: '0.9rem', margin: '6px 0 0' }}>{product.short}</p>
-        <div className="tile-price">{product.priceFrom ? 'From ' : ''}${product.price.toLocaleString()}</div>
+        {tagline && <div className="card-tag">{tagline}</div>}
+        <h3>{product.name}</h3>
+        <p className="card-short">{product.short}</p>
+        <div className="card-foot">
+          <div className="tile-price">
+            {product.priceFrom ? <small className="from">From </small> : null}${product.price.toLocaleString()} <small>AUD</small>
+          </div>
+          <span className="card-link">View details &rarr;</span>
+        </div>
       </div>
     </a>
   )

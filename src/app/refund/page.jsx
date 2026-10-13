@@ -1,4 +1,5 @@
 import { SITE } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
@@ -9,10 +10,11 @@ export const metadata = {
 
 export default function RefundPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <Breadcrumbs items={[{ label: 'Refund Policy' }]} />
-        <h1>Refund Policy</h1>
+    <>
+      <PageBar breadcrumbs={[{ label: 'Refund Policy' }]} title={<>Refund Policy</>} />
+      <section className="section">
+        <div className="container">
+          <div className="prose">
         <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Order Confirmation</h2>
@@ -47,7 +49,9 @@ export default function RefundPage() {
         <p>
           Questions about a refund or cancellation? <a href="/contact/">Contact us</a>.
         </p>
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

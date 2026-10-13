@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-col">
           <h4>{SITE.name}</h4>
-          <p style={{ color: '#dcecdf', maxWidth: 280 }}>{SITE.tagline}</p>
-          <p style={{ color: '#dcecdf' }}>
+          <p style={{ color: '#d6d3d1', maxWidth: 280 }}>{SITE.tagline}</p>
+          <p style={{ color: '#d6d3d1' }}>
             <EncodedMailto codes={[...SITE.contactEmail].map((c) => c.charCodeAt(0))} />
           </p>
         </div>

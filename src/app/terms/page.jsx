@@ -1,4 +1,5 @@
 import { SITE } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
@@ -9,10 +10,11 @@ export const metadata = {
 
 export default function TermsPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <Breadcrumbs items={[{ label: 'Terms of Service' }]} />
-        <h1>Terms of Service</h1>
+    <>
+      <PageBar breadcrumbs={[{ label: 'Terms of Service' }]} title={<>Terms of Service</>} />
+      <section className="section">
+        <div className="container">
+          <div className="prose">
         <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Orders</h2>
@@ -54,7 +56,9 @@ export default function TermsPage() {
           Questions about these terms can be sent through our{' '}
           <a href="/contact/">contact page</a>.
         </p>
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

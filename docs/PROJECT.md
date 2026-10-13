@@ -109,3 +109,5 @@ Web3Forms (default, works while domain settings finalize) + Vercel (GitHub auto-
 
 ## Theme (2026-10-13)
 Restyled to resemble golfbuggiesexpress.com.au (visual style only — no text, claims, reviews, ABN or images copied): warm cream #f7f6f2 canvas, near-black #121417, terracotta accent #b45a40, Georgia-style serif headings, promo bar + utility strip + sticky header with terracotta Order button, photo hero fading into cream, white trust strip, bordered cards with chip tags, alternating cream/white bands, accordion FAQ, dark CTA band and footer. Playfair Display font removed.
+
+Theme follow-up: product page rebuilt (gradient hero, sticky spec card, price card with crypto price, spec table from SPECS in site.js, ordering info cards, related carts); shop and category pages use a dark title bar, search, sort, category chips and an Electric/Petrol filter (client-side); content pages (about, FAQ, blog, contact, legal, order, cart, search) use the dark PageBar + card layout. SPECS rows contain only facts from the source listings.

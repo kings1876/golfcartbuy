@@ -1,4 +1,5 @@
 import { SITE } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import OrderForm from './OrderForm'
 
 export const metadata = {
@@ -10,15 +11,19 @@ export const metadata = {
 
 export default function OrderPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <h1>Order Form</h1>
+    <>
+      <PageBar title={<>Order Form</>} />
+      <section className="section">
+        <div className="container">
+          <div className="card form-card">
         <p>
           Fill out the form below to request your order. We&apos;ll confirm details and payment
           instructions by email before finalising.
         </p>
         <OrderForm />
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

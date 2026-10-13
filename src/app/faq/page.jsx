@@ -1,4 +1,5 @@
 import { SITE, FAQS } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
@@ -19,11 +20,11 @@ export default function FaqPage() {
   }
 
   return (
-    <div className="section">
-      <div className="container">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <Breadcrumbs items={[{ label: 'FAQ' }]} />
-        <h1>Frequently Asked Questions</h1>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <PageBar breadcrumbs={[{ label: 'FAQ' }]} title={<>Frequently Asked Questions</>} />
+      <section className="section">
+        <div className="container">
         <div className="faq-list" style={{ marginTop: 24 }}>
           {FAQS.map((f) => (
             <details key={f.q} className="faq-item">
@@ -32,7 +33,8 @@ export default function FaqPage() {
             </details>
           ))}
         </div>
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   )
 }

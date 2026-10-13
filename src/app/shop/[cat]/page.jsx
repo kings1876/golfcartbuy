@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 import { SITE, CATEGORIES, ACTIVE_CATEGORIES, PRODUCTS } from '@/config/site'
-import Breadcrumbs from '@/components/Breadcrumbs'
-import ProductCard from '@/components/ProductCard'
+import PageBar from '@/components/PageBar'
+import ShopBrowser from '@/components/ShopBrowser'
+import CtaBand from '@/components/CtaBand'
 
 export function generateStaticParams() {
   return ACTIVE_CATEGORIES.map((c) => ({ cat: c.slug }))
@@ -37,29 +38,19 @@ export default function CategoryPage({ params }) {
   }
 
   return (
-    <div className="section">
-      <div className="container">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Breadcrumbs items={[{ label: 'Shop', href: '/shop/' }, { label: category.name }]} />
-        <h1>{category.name} for Sale</h1>
-        <p>{category.description}</p>
-
-        {products.length > 0 ? (
-          <div className="grid" style={{ marginTop: 32 }}>
-            {products.map((p) => (
-              <ProductCard key={p.slug} product={p} />
-            ))}
-          </div>
-        ) : (
-          <p style={{ marginTop: 32 }}>
-            New inventory in this category is added regularly.{' '}
-            <a href="/contact/">Contact us</a> for current availability.
-          </p>
-        )}
-      </div>
-    </div>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <PageBar
+        breadcrumbs={[{ label: 'Shop', href: '/shop/' }, { label: category.name }]}
+        title={`${category.name} for Sale`}
+        lead={category.description}
+      />
+      <section className="section">
+        <div className="container">
+          <ShopBrowser products={products} categories={ACTIVE_CATEGORIES} activeSlug={category.slug} />
+        </div>
+      </section>
+      <CtaBand />
+    </>
   )
 }

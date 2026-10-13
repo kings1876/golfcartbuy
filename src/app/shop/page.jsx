@@ -1,7 +1,7 @@
 import { SITE, ACTIVE_CATEGORIES, PRODUCTS } from '@/config/site'
-import Breadcrumbs from '@/components/Breadcrumbs'
-import CategoryTile from '@/components/CategoryTile'
-import ProductCard from '@/components/ProductCard'
+import PageBar from '@/components/PageBar'
+import ShopBrowser from '@/components/ShopBrowser'
+import CtaBand from '@/components/CtaBand'
 
 export const metadata = {
   title: 'Shop Golf Carts | E-Z-GO, Club Car & Yamaha',
@@ -12,28 +12,18 @@ export const metadata = {
 
 export default function ShopPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <Breadcrumbs items={[{ label: 'Shop' }]} />
-        <h1>Golf Carts for Sale</h1>
-        <p>
-          Browse our current new E-Z-GO and used Club Car and Yamaha golf carts for sale, in electric and petrol.
-        </p>
-
-        <h2 style={{ marginTop: 40 }}>Shop by Category</h2>
-        <div className="grid grid-3">
-          {ACTIVE_CATEGORIES.map((c) => (
-            <CategoryTile key={c.slug} category={c} />
-          ))}
+    <>
+      <PageBar
+        breadcrumbs={[{ label: 'Shop' }]}
+        title="Golf Carts for Sale"
+        lead={`Browse ${PRODUCTS.length} new and used golf carts from E-Z-GO, Club Car and Yamaha, in electric and petrol. Free shipping Australia-wide.`}
+      />
+      <section className="section">
+        <div className="container">
+          <ShopBrowser products={PRODUCTS} categories={ACTIVE_CATEGORIES} activeSlug={null} />
         </div>
-
-        <h2 style={{ marginTop: 48 }}>All Golf Carts</h2>
-        <div className="grid">
-          {PRODUCTS.map((p) => (
-            <ProductCard key={p.slug} product={p} />
-          ))}
-        </div>
-      </div>
-    </div>
+      </section>
+      <CtaBand />
+    </>
   )
 }

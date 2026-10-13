@@ -1,4 +1,5 @@
 import { SITE } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import EncodedMailto from '@/components/EncodedMailto'
 
@@ -10,10 +11,11 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <Breadcrumbs items={[{ label: 'Privacy Policy' }]} />
-        <h1>Privacy Policy</h1>
+    <>
+      <PageBar breadcrumbs={[{ label: 'Privacy Policy' }]} title={<>Privacy Policy</>} />
+      <section className="section">
+        <div className="container">
+          <div className="prose">
         <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Information We Collect</h2>
@@ -47,7 +49,9 @@ export default function PrivacyPage() {
           Questions about this policy can be sent to{' '}
           <EncodedMailto codes={[...SITE.contactEmail].map((c) => c.charCodeAt(0))} />.
         </p>
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

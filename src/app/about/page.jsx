@@ -1,4 +1,5 @@
 import { SITE, ACTIVE_CATEGORIES } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
@@ -22,11 +23,12 @@ const jsonLd = {
 
 export default function AboutPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <Breadcrumbs items={[{ label: 'About' }]} />
-        <h1>About {SITE.name}</h1>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <PageBar breadcrumbs={[{ label: 'About' }]} title={<>About {SITE.name}</>} />
+      <section className="section">
+        <div className="container">
+          <div className="prose">
         <p>
           {SITE.name} sells new E-Z-GO and used Club Car and Yamaha golf carts in Australia and was
           founded in {SITE.foundingYear}. We focus on one thing: making it straightforward to
@@ -97,7 +99,9 @@ export default function AboutPage() {
           process works, visit our <a href="/faq/">FAQ page</a> or{' '}
           <a href="/contact/">get in touch</a> — we&apos;re happy to help before you order.
         </p>
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

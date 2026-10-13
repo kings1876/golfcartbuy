@@ -1,4 +1,5 @@
 import { SITE } from '@/config/site'
+import PageBar from '@/components/PageBar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
@@ -9,10 +10,11 @@ export const metadata = {
 
 export default function ShippingPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <Breadcrumbs items={[{ label: 'Shipping Policy' }]} />
-        <h1>Shipping Policy</h1>
+    <>
+      <PageBar breadcrumbs={[{ label: 'Shipping Policy' }]} title={<>Shipping Policy</>} />
+      <section className="section">
+        <div className="container">
+          <div className="prose">
         <p>Last updated: {new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <h2>Free Shipping</h2>
@@ -41,7 +43,9 @@ export default function ShippingPage() {
         <p>
           Questions about shipping? <a href="/contact/">Contact us</a>.
         </p>
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

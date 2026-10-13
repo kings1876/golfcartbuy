@@ -15,21 +15,19 @@ export default function ProductOrderForm({ product }) {
   }
 
   return (
-    <div style={{ marginTop: 20 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+    <div className="order-box">
+      <div className="order-row">
         <QtyStepper qty={qty} setQty={setQty} />
         <button type="button" className="btn btn-primary" onClick={handleAdd}>
           Add to Order
         </button>
+        <a href="/order/" className="btn btn-outline">Start an order</a>
       </div>
       {added && (
-        <p role="status" style={{ color: 'var(--green)' }}>
+        <p role="status" className="added-note">
           Added to your order. <a href="/cart/">View order &rarr;</a>
         </p>
       )}
-      <p className="form-note">
-        Or <a href="/order/">go straight to the order form</a> and mention this cart.
-      </p>
     </div>
   )
 }

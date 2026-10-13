@@ -538,3 +538,1103 @@ export const FAQS = [
 export const ACTIVE_CATEGORIES = CATEGORIES.filter((c) =>
   PRODUCTS.some((p) => p.category === c.slug || p.brand === c.slug)
 )
+
+// Power type, derived from the product name (used for the shop's Electric / Petrol filter).
+const BRAND_NAMES = { ezgo: 'E-Z-GO', 'club-car': 'Club Car', yamaha: 'Yamaha' }
+PRODUCTS.forEach((p) => {
+  p.power = /petrol/i.test(p.name) ? 'Petrol' : 'Electric'
+  p.condition = p.category === 'new-golf-carts' ? 'New' : /^Refurbished/i.test(p.name) ? 'Refurbished' : 'Used'
+  p.brandName = BRAND_NAMES[p.brand] || ''
+})
+
+// Specification rows shown on each product page. Only facts taken from the source listings.
+export const SPECS = {
+  "used-2021-club-car-tempo-lithium-golf-cart-sapphire-with-premium-seats": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Sapphire"
+    ],
+    [
+      "Configuration",
+      "Premium seats"
+    ]
+  ],
+  "used-2021-club-car-tempo-lithium-golf-cart-green": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Green"
+    ]
+  ],
+  "refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Atomic Orange"
+    ]
+  ],
+  "refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Liquid Yellow"
+    ]
+  ],
+  "refurbished-2021-club-car-tempo-lithium-golf-cart-synergy-green": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Synergy Green"
+    ]
+  ],
+  "refurbished-2019-club-car-tempo-lithium-golf-cart-candy-apple-red": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2019"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Candy Apple Red"
+    ]
+  ],
+  "refurbished-2020-club-car-tempo-lithium-golf-cart-candy-blue": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2020"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Candy Blue"
+    ]
+  ],
+  "used-2016-yamaha-fla-golf-cart-white": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Year",
+      "2016"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "FLA (flooded lead-acid)"
+    ],
+    [
+      "Listed speed",
+      "27 km/h"
+    ],
+    [
+      "Colour",
+      "White"
+    ]
+  ],
+  "refurbished-2021-club-car-tempo-lithium-golf-cart-ice-blue": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Ice Blue"
+    ]
+  ],
+  "used-2017-club-car-onward-lithium-golf-cart-metallic-grey": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Onward"
+    ],
+    [
+      "Year",
+      "2017"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Metallic Grey"
+    ]
+  ],
+  "used-2019-club-car-tempo-golf-cart-green": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2019"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "FLA (flooded lead-acid) or lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Green"
+    ]
+  ],
+  "used-2022-club-car-tempo-golf-cart-green": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2022"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "FLA (flooded lead-acid)"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Green"
+    ]
+  ],
+  "used-2021-club-car-tempo-lithium-golf-cart-platinum": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Platinum"
+    ]
+  ],
+  "used-2021-club-car-tempo-lithium-golf-cart-green-10990": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Green"
+    ]
+  ],
+  "refurbished-club-car-ranger-2017-lithium-golf-cart-red": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Ranger"
+    ],
+    [
+      "Year",
+      "2017"
+    ],
+    [
+      "Condition",
+      "Refurbished"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Red"
+    ]
+  ],
+  "used-2020-club-car-tempo-lithium-platinum-4-seat-flip-tray-golf-cart": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2020"
+    ],
+    [
+      "Condition",
+      "Used"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Platinum"
+    ],
+    [
+      "Configuration",
+      "4 seats with flip tray"
+    ]
+  ],
+  "refurbished-2022-club-car-tempo-lithium-golf-cart-metallic-platinum": [
+    [
+      "Brand",
+      "Club Car"
+    ],
+    [
+      "Model",
+      "Tempo"
+    ],
+    [
+      "Year",
+      "2022"
+    ],
+    [
+      "Condition",
+      "Refurbished (custom build)"
+    ],
+    [
+      "Power",
+      "Electric"
+    ],
+    [
+      "Battery",
+      "Lithium"
+    ],
+    [
+      "Listed speed",
+      "32 km/h"
+    ],
+    [
+      "Colour",
+      "Metallic Platinum"
+    ]
+  ],
+  "yamaha-drive2-quietech-efi-2024-evergreen": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Model",
+      "Drive2 QuieTech EFI"
+    ],
+    [
+      "Year",
+      "2024"
+    ],
+    [
+      "Condition",
+      "Used, excellent"
+    ],
+    [
+      "Power",
+      "Petrol"
+    ],
+    [
+      "Colour",
+      "Evergreen"
+    ],
+    [
+      "Service",
+      "Full service"
+    ],
+    [
+      "Windscreen",
+      "New fold-down windscreen"
+    ],
+    [
+      "Wheel trims",
+      "8 inch, choice of gold, silver, white or chrome"
+    ],
+    [
+      "Includes",
+      "2 sand bucket rings and a spare key"
+    ]
+  ],
+  "yamaha-drive2-quietech-efi-2022-evergreen": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Model",
+      "Drive2 QuieTech EFI"
+    ],
+    [
+      "Year",
+      "2022"
+    ],
+    [
+      "Condition",
+      "Used, excellent"
+    ],
+    [
+      "Power",
+      "Petrol"
+    ],
+    [
+      "Colour",
+      "Evergreen"
+    ],
+    [
+      "Service",
+      "Full service"
+    ],
+    [
+      "Battery",
+      "New battery"
+    ],
+    [
+      "Seat covers",
+      "Dry mesh seat covers"
+    ],
+    [
+      "Wheel trims",
+      "Gold 8 inch"
+    ],
+    [
+      "Windscreen",
+      "New fold-down windscreen"
+    ],
+    [
+      "Includes",
+      "Sand bottle, cooler box and a spare key"
+    ]
+  ],
+  "yamaha-drive2-quietech-2018-moonstone-silver": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Model",
+      "Drive2 QuieTech"
+    ],
+    [
+      "Year",
+      "2018"
+    ],
+    [
+      "Condition",
+      "Used, good"
+    ],
+    [
+      "Power",
+      "Petrol"
+    ],
+    [
+      "Colour",
+      "Moonstone Silver"
+    ],
+    [
+      "Service",
+      "Full service"
+    ],
+    [
+      "Battery",
+      "New battery"
+    ],
+    [
+      "Wheel trims",
+      "Four colours available"
+    ],
+    [
+      "Windscreen",
+      "Fold-down windscreen"
+    ],
+    [
+      "Includes",
+      "Sand bucket ring and a spare key"
+    ]
+  ],
+  "yamaha-drive2-ac-electric-2022-white": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Model",
+      "Drive2 AC"
+    ],
+    [
+      "Year",
+      "2022"
+    ],
+    [
+      "Condition",
+      "Used, excellent"
+    ],
+    [
+      "Power",
+      "Electric (48V)"
+    ],
+    [
+      "Colour",
+      "White"
+    ],
+    [
+      "Battery",
+      "New set of Trojan T875 batteries"
+    ],
+    [
+      "Service",
+      "Full service"
+    ],
+    [
+      "Charger",
+      "Included"
+    ],
+    [
+      "Wheel trims",
+      "8 inch silver"
+    ],
+    [
+      "Windscreen",
+      "Fold-down windscreen"
+    ],
+    [
+      "Includes",
+      "Sand bucket ring and a spare key"
+    ]
+  ],
+  "yamaha-drive2-quietech-2022-white": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Model",
+      "Drive2 QuieTech"
+    ],
+    [
+      "Year",
+      "2022"
+    ],
+    [
+      "Condition",
+      "Used, very good"
+    ],
+    [
+      "Power",
+      "Petrol"
+    ],
+    [
+      "Colour",
+      "White"
+    ],
+    [
+      "Service",
+      "Full service"
+    ],
+    [
+      "Battery",
+      "New battery"
+    ],
+    [
+      "Seat covers",
+      "Dry mesh seat covers"
+    ],
+    [
+      "Wheel trims",
+      "Gold 8 inch"
+    ],
+    [
+      "Windscreen",
+      "Fold-down windscreen"
+    ],
+    [
+      "Includes",
+      "Sand bucket ring and a spare key"
+    ],
+    [
+      "Note",
+      "Slight crack in the bagwell"
+    ]
+  ],
+  "yamaha-drive2-quietech-efi-2022-bronze-metallic": [
+    [
+      "Brand",
+      "Yamaha"
+    ],
+    [
+      "Model",
+      "Drive2 QuieTech EFI"
+    ],
+    [
+      "Year",
+      "2022"
+    ],
+    [
+      "Condition",
+      "Used, very good"
+    ],
+    [
+      "Power",
+      "Petrol"
+    ],
+    [
+      "Colour",
+      "Bronze Metallic"
+    ],
+    [
+      "Service",
+      "Full service"
+    ],
+    [
+      "Seat",
+      "New seat"
+    ],
+    [
+      "Windscreen",
+      "Fold-down windscreen"
+    ],
+    [
+      "Wheel trims",
+      "8 inch, choice of gold, silver, white or chrome"
+    ],
+    [
+      "Includes",
+      "2 sand bucket rings and a spare key"
+    ]
+  ],
+  "e-z-go-rxv-freedom-2-seater": [
+    [
+      "Brand",
+      "E-Z-GO"
+    ],
+    [
+      "Model",
+      "Freedom RXV"
+    ],
+    [
+      "Condition",
+      "New"
+    ],
+    [
+      "Power",
+      "Electric (48V)"
+    ],
+    [
+      "Seats",
+      "2"
+    ],
+    [
+      "Battery",
+      "Samsung 2.2 lithium-ion single pack, maintenance free, with battery management system"
+    ],
+    [
+      "Motor",
+      "AC motor, induction service motor brake, regenerative braking"
+    ],
+    [
+      "Charger",
+      "Onboard charger"
+    ],
+    [
+      "Instruments",
+      "Digital state of charge meter, hour meter and speedometer"
+    ],
+    [
+      "Lighting",
+      "LED headlights with daytime running lights"
+    ],
+    [
+      "Wheels",
+      "Paramount 215/40-12 tyres on Rogue alloy mag wheels"
+    ]
+  ],
+  "e-z-go-rxv-freedom-4-seater": [
+    [
+      "Brand",
+      "E-Z-GO"
+    ],
+    [
+      "Model",
+      "Freedom RXV"
+    ],
+    [
+      "Condition",
+      "New"
+    ],
+    [
+      "Power",
+      "Electric (48V)"
+    ],
+    [
+      "Seats",
+      "4 (2+2)"
+    ],
+    [
+      "Battery",
+      "4 x Trojan T1275 12V deep-cycle lead-acid"
+    ],
+    [
+      "Motor",
+      "AC motor, induction service motor brake"
+    ],
+    [
+      "Brakes",
+      "Automatic E-Park brake"
+    ],
+    [
+      "Charger",
+      "48V Delta Q portable charger"
+    ],
+    [
+      "Windshield",
+      "Split-fold, clear or tinted"
+    ],
+    [
+      "Rear seat kit",
+      "Extended top and fixed rear seat kit in Oyster, Black or Stone Beige"
+    ]
+  ],
+  "e-z-go-rxv-freedom-executive-2-seater-patriot-blue": [
+    [
+      "Brand",
+      "E-Z-GO"
+    ],
+    [
+      "Model",
+      "Freedom RXV Executive"
+    ],
+    [
+      "Condition",
+      "New"
+    ],
+    [
+      "Power",
+      "Electric (48V)"
+    ],
+    [
+      "Seats",
+      "2"
+    ],
+    [
+      "Colour",
+      "Patriot Blue"
+    ],
+    [
+      "Battery",
+      "Samsung 2.2 lithium-ion single pack, maintenance free, with battery management system"
+    ],
+    [
+      "Motor",
+      "AC motor, induction service motor brake, regenerative braking"
+    ],
+    [
+      "Charger",
+      "Onboard charger"
+    ],
+    [
+      "Wheels",
+      "12 inch mag wheels, sports steering wheel"
+    ],
+    [
+      "Features",
+      "LED headlights, LED side mirrors, glove box, drinks cooler, club and ball washer, 12V phone holder, dual USB, Apple CarPlay and Android Auto infotainment, sand bottle kit, rain bag cover"
+    ]
+  ],
+  "e-z-go-rxv-fleet": [
+    [
+      "Brand",
+      "E-Z-GO"
+    ],
+    [
+      "Model",
+      "RXV Fleet"
+    ],
+    [
+      "Condition",
+      "New"
+    ],
+    [
+      "Power",
+      "Electric (48V)"
+    ],
+    [
+      "Battery",
+      "Samsung 2.2 lithium-ion single pack, maintenance free, with battery management system"
+    ],
+    [
+      "Motor",
+      "AC motor, induction service motor brake, regenerative braking"
+    ],
+    [
+      "Brakes",
+      "Automatic electric park brake; holds a 40% grade"
+    ],
+    [
+      "Charger",
+      "48V Delta Q portable charger"
+    ],
+    [
+      "Weight",
+      "298 kg"
+    ],
+    [
+      "Dimensions",
+      "240 x 119 x 178 cm"
+    ],
+    [
+      "Includes",
+      "Two sand bottles"
+    ]
+  ],
+  "e-z-go-rxv-fleet-ex1-petrol": [
+    [
+      "Brand",
+      "E-Z-GO"
+    ],
+    [
+      "Model",
+      "RXV Fleet EX1"
+    ],
+    [
+      "Condition",
+      "New"
+    ],
+    [
+      "Power",
+      "Petrol"
+    ],
+    [
+      "Engine",
+      "11.5 hp single-cylinder petrol engine with closed-loop electronic fuel injection"
+    ],
+    [
+      "Instruments",
+      "Fuel gauge"
+    ],
+    [
+      "Wheels",
+      "Metallic hubcaps in gold or silver"
+    ],
+    [
+      "Includes",
+      "Two sand bottles"
+    ]
+  ]
+}

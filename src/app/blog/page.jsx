@@ -1,5 +1,6 @@
 import { SITE, POSTS } from '@/config/site'
-import Breadcrumbs from '@/components/Breadcrumbs'
+import PageBar from '@/components/PageBar'
+import CtaBand from '@/components/CtaBand'
 
 export const metadata = {
   title: 'Golf Cart Blog & Buying Guides',
@@ -7,29 +8,40 @@ export const metadata = {
   alternates: { canonical: `https://${SITE.domain}/blog/` },
 }
 
+const readMins = (post) => Math.max(1, Math.round(post.body.join(' ').split(/\s+/).length / 200))
+const fmt = (d) => new Date(d).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })
+
 export default function BlogIndexPage() {
   return (
-    <div className="section">
-      <div className="container">
-        <Breadcrumbs items={[{ label: 'Blog' }]} />
-        <h1>Golf Cart Buying Guides</h1>
-        <p>Practical guides to help you choose the right golf cart for your needs.</p>
-
-        <div className="grid" style={{ marginTop: 32 }}>
-          {POSTS.map((post) => (
-            <a key={post.slug} href={`/blog/${post.slug}/`} className="tile">
-              <div className="tile-body">
-                <div className="guide-meta">
-                  <span className="guide-tag">{post.tag}</span>
+    <>
+      <PageBar
+        breadcrumbs={[{ label: 'Blog' }]}
+        title="Golf Cart Buying Guides"
+        lead="Plain-language guides to help you choose the right golf cart for your needs."
+      />
+      <section className="section">
+        <div className="container">
+          <div className="grid grid-3">
+            {POSTS.map((post) => (
+              <a key={post.slug} href={`/blog/${post.slug}/`} className="tile">
+                <div className="tile-body">
+                  <div className="guide-meta">
+                    <span className="guide-tag">{post.tag}</span>
+                    <span className="guide-read">{readMins(post)} min read</span>
+                  </div>
+                  <h2 style={{ fontSize: '1.2rem' }}>{post.title}</h2>
+                  <p>{post.excerpt}</p>
+                  <div className="card-foot">
+                    <span className="guide-read">{fmt(post.date)}</span>
+                    <span className="guide-link">Read guide &rarr;</span>
+                  </div>
                 </div>
-                <h2 style={{ fontSize: '1.15rem' }}>{post.title}</h2>
-                <p>{post.excerpt}</p>
-                <p className="form-note">{new Date(post.date).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-              </div>
-            </a>
-          ))}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <CtaBand />
+    </>
   )
 }

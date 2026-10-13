@@ -1,6 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import PageBar from '@/components/PageBar'
 import { PRODUCTS, POSTS } from '@/config/site'
 import ProductCard from '@/components/ProductCard'
 
@@ -25,9 +26,10 @@ export default function SearchPage() {
   }, [q])
 
   return (
-    <div className="section">
-      <div className="container">
-        <h1>Search</h1>
+    <>
+      <PageBar title={<>Search</>} />
+      <section className="section">
+        <div className="container">
         <div className="form-row" style={{ maxWidth: 480 }}>
           <label htmlFor="q">Search products and articles</label>
           <input
@@ -66,7 +68,8 @@ export default function SearchPage() {
             )}
           </div>
         )}
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   )
 }

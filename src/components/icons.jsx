@@ -65,3 +65,20 @@ export function ShieldIcon(props) {
     </svg>
   )
 }
+
+export function BoltIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...common} {...props}>
+      <path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z" />
+    </svg>
+  )
+}
+
+export function GaugeIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...common} {...props}>
+      <path d="M4.5 17a8 8 0 1 1 15 0" />
+      <path d="m12 14 4-4" />
+    </svg>
+  )
+}

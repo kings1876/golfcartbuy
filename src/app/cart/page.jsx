@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import PageBar from '@/components/PageBar'
 import { PRODUCTS, SITE } from '@/config/site'
 import { readCart, updateQty, removeFromCart } from '@/lib/cart'
 import QtyStepper from '@/components/QtyStepper'
@@ -25,9 +26,10 @@ export default function CartPage() {
   const meetsMin = subtotal >= SITE.minOrder
 
   return (
-    <div className="section">
-      <div className="container">
-        <h1>Your Order</h1>
+    <>
+      <PageBar title={<>Your Order</>} />
+      <section className="section">
+        <div className="container">
 
         {lines.length === 0 ? (
           <p>
@@ -106,7 +108,8 @@ export default function CartPage() {
             </div>
           </>
         )}
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   )
 }
