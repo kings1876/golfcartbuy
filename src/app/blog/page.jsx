@@ -19,6 +19,9 @@ export default function BlogIndexPage() {
           {POSTS.map((post) => (
             <a key={post.slug} href={`/blog/${post.slug}/`} className="tile">
               <div className="tile-body">
+                <div className="guide-meta">
+                  <span className="guide-tag">{post.tag}</span>
+                </div>
                 <h2 style={{ fontSize: '1.15rem' }}>{post.title}</h2>
                 <p>{post.excerpt}</p>
                 <p className="form-note">{new Date(post.date).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</p>

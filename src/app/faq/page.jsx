@@ -24,7 +24,7 @@ export default function FaqPage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Breadcrumbs items={[{ label: 'FAQ' }]} />
         <h1>Frequently Asked Questions</h1>
-        <div style={{ maxWidth: 760, marginTop: 24 }}>
+        <div className="faq-list" style={{ marginTop: 24 }}>
           {FAQS.map((f) => (
             <details key={f.q} className="faq-item">
               <summary>{f.q}</summary>

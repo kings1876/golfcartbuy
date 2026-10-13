@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { SITE, ACTIVE_CATEGORIES } from '@/config/site'
+import { SearchIcon } from './icons'
 
 const NAV_ITEMS = ACTIVE_CATEGORIES.map((c) => ({ href: `/shop/${c.slug}/`, label: c.name }))
 
@@ -38,7 +39,10 @@ export default function Nav() {
       <div className="nav-inner container">
         <a href="/" className="brand" aria-label={`${SITE.name} home`}>
           <span className="brand-mark" aria-hidden="true">GC</span>
-          {SITE.name}
+          <span className="brand-text">
+            <span className="brand-name">{SITE.name}</span>
+            <span className="brand-sub">New &amp; used golf carts · Australia-wide</span>
+          </span>
         </a>
 
         <nav aria-label="Product categories">
@@ -71,8 +75,11 @@ export default function Nav() {
         </nav>
 
         <div className="nav-actions">
-          <a href="/order/" className="cart-link" aria-label="Go to order form">
-            Order
+          <a href="/search/" className="icon-btn" aria-label="Search carts and guides">
+            <SearchIcon aria-hidden="true" />
+          </a>
+          <a href="/order/" className="btn btn-primary btn-sm">
+            Order Now
           </a>
           <button
             type="button"

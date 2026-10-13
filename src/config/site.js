@@ -439,6 +439,7 @@ export const PRODUCTS = [
 export const POSTS = [
   {
     slug: 'electric-vs-gas-golf-carts',
+    tag: 'Buying Guide',
     title: 'Electric vs. Petrol Golf Carts: Which Is Right for You in 2026?',
     date: '2026-01-15',
     excerpt:
@@ -453,6 +454,7 @@ export const POSTS = [
   },
   {
     slug: 'club-car-vs-ezgo-vs-yamaha',
+    tag: 'Brands',
     title: 'Club Car vs. EZGO vs. Yamaha: Comparing the Top Golf Cart Brands',
     date: '2026-02-03',
     excerpt:
@@ -467,6 +469,7 @@ export const POSTS = [
   },
   {
     slug: 'new-vs-used-golf-carts',
+    tag: 'Buying Guide',
     title: 'New vs. Used Golf Carts: How to Choose the Best Value',
     date: '2026-03-01',
     excerpt:
@@ -481,6 +484,7 @@ export const POSTS = [
   },
   {
     slug: 'golf-cart-buying-guide',
+    tag: 'Buying Guide',
     title: 'Golf Cart Buying Guide: What to Know Before You Buy',
     date: '2026-03-20',
     excerpt:

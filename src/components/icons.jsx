@@ -47,3 +47,21 @@ export function CartIcon(props) {
     </svg>
   )
 }
+
+export function SearchIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...common} {...props}>
+      <circle cx="11" cy="11" r="6.5" />
+      <path d="m16 16 4.5 4.5" />
+    </svg>
+  )
+}
+
+export function ShieldIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="16" height="16" {...common} {...props}>
+      <path d="M12 3 5 6v5.5c0 4.2 2.9 7.9 7 9.5 4.1-1.6 7-5.3 7-9.5V6l-7-3Z" />
+      <path d="m9 12 2.2 2.2L15.5 10" />
+    </svg>
+  )
+}

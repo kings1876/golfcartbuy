@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import ChatHub from '@/components/ChatHub'
+import { ShieldIcon } from '@/components/icons'
 import { SITE } from '@/config/site'
 
 export const metadata = {
@@ -39,8 +40,20 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <a href="#main" className="skip-link">Skip to main content</a>
-        <div className="announce">
-          Free shipping on every order &middot; {SITE.cryptoDiscountPercent}% off when you pay with crypto &middot; ${SITE.minOrder.toLocaleString()} minimum order
+        <div className="promo">
+          <span className="promo-dot" aria-hidden="true" />
+          Save {SITE.cryptoDiscountPercent}% on your order when you pay with Bitcoin (BTC) or USDT
+        </div>
+        <div className="utility">
+          <div className="utility-inner container">
+            <span className="utility-chip">
+              <ShieldIcon aria-hidden="true" /> Specs, condition and inclusions listed on every cart
+            </span>
+            <span className="utility-right">
+              <span>Free shipping {SITE.shipsTo}</span>
+              <span>Minimum order ${SITE.minOrder.toLocaleString()} AUD</span>
+            </span>
+          </div>
         </div>
         <Nav />
         <main id="main">{children}</main>

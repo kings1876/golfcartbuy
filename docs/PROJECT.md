@@ -106,3 +106,6 @@ Web3Forms (default, works while domain settings finalize) + Vercel (GitHub auto-
 - Currency AUD, locale en-AU, shipping Australia-wide, petrol instead of gas, Australian Consumer Law line on refund page.
 - Product prices converted from the original placeholder USD prices at ~1.5 AUD/USD — still placeholders, not real pricing.
 - Minimum order converted from US$3,500 to A$5,250 at ~1.5 AUD/USD; product prices use the same rate. Not stated whether prices include GST.
+
+## Theme (2026-10-13)
+Restyled to resemble golfbuggiesexpress.com.au (visual style only — no text, claims, reviews, ABN or images copied): warm cream #f7f6f2 canvas, near-black #121417, terracotta accent #b45a40, Georgia-style serif headings, promo bar + utility strip + sticky header with terracotta Order button, photo hero fading into cream, white trust strip, bordered cards with chip tags, alternating cream/white bands, accordion FAQ, dark CTA band and footer. Playfair Display font removed.

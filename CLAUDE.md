@@ -11,6 +11,9 @@ generates the page, route, meta, JSON-LD, sitemap entry, and llms.txt content. N
 Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.txt) — edit the config and run
 `node scripts/gen-agent-files.mjs` (also runs automatically via the `prebuild` script).
 
+## Theme
+Cream/near-black/terracotta theme defined by CSS variables at the top of src/styles/globals.css (legacy names --green*/--gold* kept as aliases). Headings use the system serif stack (no web fonts). Do not copy text, reviews, ABN or images from the reference site.
+
 ## Rules
 - `npm run build && npm run crosscheck` must pass before every push.
 - One `<h1>` per page. Meta descriptions ~110-160 chars. Titles <=60.
