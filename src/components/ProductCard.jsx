@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
         )}
         <h3 style={{ fontSize: '1.05rem', margin: 0 }}>{product.name}</h3>
         <p style={{ fontSize: '0.9rem', margin: '6px 0 0' }}>{product.short}</p>
-        <div className="tile-price">${product.price.toLocaleString()}</div>
+        <div className="tile-price">{product.priceFrom ? 'From ' : ''}${product.price.toLocaleString()}</div>
       </div>
     </a>
   )

@@ -357,6 +357,7 @@ export const PRODUCTS = [
   },
   {
     slug: 'used-2019-club-car-tempo-golf-cart-green',
+    priceFrom: true,
     name: 'Used 2019 Club Car Tempo Golf Cart - Green',
     price: 7100,
     category: 'used-golf-carts',
@@ -369,6 +370,7 @@ export const PRODUCTS = [
   },
   {
     slug: 'used-2022-club-car-tempo-golf-cart-green',
+    priceFrom: true,
     name: 'Used 2022 Club Car Tempo Golf Cart – Green',
     price: 7990,
     category: 'used-golf-carts',

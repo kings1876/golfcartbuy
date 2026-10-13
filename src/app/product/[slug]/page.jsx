@@ -72,7 +72,7 @@ export default function ProductPage({ params }) {
               <span className="tile-badge">{product.badge}</span>
             )}
             <h1>{product.name}</h1>
-            <div className="product-price">${product.price.toLocaleString()}</div>
+            <div className="product-price">{product.priceFrom ? 'From ' : ''}${product.price.toLocaleString()}</div>
             <p>{product.description}</p>
             <ProductOrderForm product={product} />
           </div>
