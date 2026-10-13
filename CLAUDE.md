@@ -23,7 +23,7 @@ Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.tx
 - `CHAT.channels` tawk.to value in `src/config/site.js` — currently a placeholder property/widget ID.
 - `SITE.contactEmail` / `SITE.orderEmail` — currently set to a placeholder inbox; replace with the real business inbox.
 - `SITE.phone` — not provided at intake; add if/when available.
-- Product photos — 22 of 29 products use photos supplied by the user (taken from the dealer sites' listings; originals in assets/product-photos, gitignored, processed by npm run images). The 7 Yamaha Drive2 listings still use SVG placeholders. Confirm you have permission to use third-party dealer photos.
+- Product photos — 22 of 28 products use photos supplied by the user (taken from the dealer sites' listings; originals in assets/product-photos, gitignored, processed by npm run images). The 6 Yamaha Drive2 listings still use SVG placeholders. Confirm you have permission to use third-party dealer photos.
 - `SITE.domain` is already set to `golfcartbuy.com` (live) — if it ever changes, edit that ONE line and rebuild; never find-and-replace across files.
 
 ## Brand facts (only these are true — never invent more)
@@ -31,6 +31,6 @@ Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.tx
 - Sells to Australia, ships Australia-wide (all states and territories), free shipping on every order
 - Minimum order: $5,250 AUD
 - Payment: crypto only (BTC, USDT), 10% discount when paying with crypto
-- Current stock (29 listings, all taken from third-party dealer pages at the user's request): 7 used Yamaha Drive2 (yamahagolfcars.com.au/used.html), 5 new E-Z-GO (qldgolfcarts.com.au), and 17 used/refurbished Club Car + 1 used Yamaha (igu.com.au/collections/used-carts). Facts/specs only; descriptions rewritten; no photos copied; dealer warranties, optional extras, stock status, "was" prices and contact details NOT carried over.
+- Current stock (28 listings, all taken from third-party dealer pages at the user's request): 6 used Yamaha Drive2 (yamahagolfcars.com.au/used.html), 5 new E-Z-GO (qldgolfcarts.com.au), and 17 used/refurbished Club Car + 1 used Yamaha (igu.com.au/collections/used-carts). Facts/specs only; descriptions rewritten; no photos copied; dealer warranties, optional extras, stock status, "was" prices and contact details NOT carried over.
 - Categories with no products are hidden from nav, grids, sitemap and llms.txt (ACTIVE_CATEGORIES in site.js); they return after products are added.
 No invented statistics, awards, press, or named clients. Ever.

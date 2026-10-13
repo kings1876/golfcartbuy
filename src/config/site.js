@@ -92,18 +92,6 @@ export const CATEGORIES = [
 
 export const PRODUCTS = [
   {
-    slug: 'yamaha-drive2-lithium-ptv-2022-ex-demo',
-    name: '2022 Yamaha Drive2 Lithium PTV (Ex-Demo)',
-    price: 17500,
-    category: 'used-golf-carts',
-    brand: 'yamaha',
-    badge: 'Ex-Demo',
-    short: 'Ex-demo 2022 Yamaha Drive2 Lithium PTV with only 4 hours of use.',
-    description:
-      'An ex-demo 2022 Yamaha Drive2 Lithium PTV in excellent condition, with only 4 hours of use. Lithium-powered used carts are rarely available. Includes head and tail lights, foot horn, rubber floor mat, large cooler box, dual sand bottles, rear-view mirror, battery charger and a spare key.',
-    images: ['yamaha-drive2-lithium-ptv-2022-ex-demo.svg'],
-  },
-  {
     slug: 'yamaha-drive2-quietech-efi-2024-evergreen',
     name: '2024 Yamaha Drive2 QuieTech EFI Petrol (Evergreen)',
     price: 11000,
@@ -470,7 +458,7 @@ export const POSTS = [
       'Yamaha golf carts, particularly models with QuieTech EFI engines, are often chosen by buyers who want petrol-cart range with noticeably less engine noise than a typical petrol cart.',
       'There is no single "best" brand — the right choice depends on whether you prioritize ride comfort, parts availability, resale value, or noise level.',
     ],
-    relatedProducts: ['yamaha-drive2-quietech-efi-2024-evergreen', 'yamaha-drive2-lithium-ptv-2022-ex-demo'],
+    relatedProducts: ['yamaha-drive2-quietech-efi-2024-evergreen', 'yamaha-drive2-quietech-efi-2022-bronze-metallic'],
   },
   {
     slug: 'new-vs-used-golf-carts',
