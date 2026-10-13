@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
   title: 'About Golf Cart Buy',
-  description: `${SITE.name} sells used Yamaha golf carts in Australia, founded in ${SITE.foundingYear}. Learn about how we operate, what we sell, and where we ship.`,
+  description: `${SITE.name} sells new and used golf carts in Australia, founded in ${SITE.foundingYear}. Learn about how we operate, what we sell, and where we ship.`,
   alternates: { canonical: `https://${SITE.domain}/about/` },
 }
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
         <Breadcrumbs items={[{ label: 'About' }]} />
         <h1>About {SITE.name}</h1>
         <p>
-          {SITE.name} sells used Yamaha Drive2 golf carts in Australia and was
+          {SITE.name} sells new E-Z-GO and used Yamaha golf carts in Australia and was
           founded in {SITE.foundingYear}. We focus on one thing: making it straightforward to
           find and order a golf cart online, whether you want an electric cart or a petrol cart,
           and have it shipped to your door.
@@ -36,8 +36,9 @@ export default function AboutPage() {
 
         <h2>What We Sell</h2>
         <p>
-          Our current stock is used Yamaha Drive2 golf carts, in both electric and petrol power
-          types. Each listing shows the year, colour, condition and what is included. Our current
+          Our current stock is new E-Z-GO golf carts and used Yamaha Drive2 golf carts, in both
+          electric and petrol power types. Each listing shows its specifications, and used carts
+          show their year, colour, condition and what is included. Our current
           categories include:
         </p>
         <ul>
@@ -56,9 +57,9 @@ export default function AboutPage() {
         <h2>New vs. Used</h2>
         <p>
           New golf carts are unused and give you the longest possible service life before any
-          major component needs replacing. Used golf carts, which is what we currently list, cost
+          major component needs replacing. Used golf carts cost
           less and suit buyers who don&apos;t need the latest model year or who want a second or
-          backup cart. Every listing states its condition and what is included.
+          backup cart. We list both new and used carts.
         </p>
 
         <h2>Electric vs. Petrol</h2>

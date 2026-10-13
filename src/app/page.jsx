@@ -4,9 +4,9 @@ import ProductCard from '@/components/ProductCard'
 import { TruckIcon, BadgeIcon, WrenchIcon, CoinIcon } from '@/components/icons'
 
 export const metadata = {
-  title: 'Used Golf Carts for Sale | Yamaha Drive2 Australia',
+  title: 'Golf Carts for Sale | New E-Z-GO & Used Yamaha',
   description:
-    'Shop used Yamaha Drive2 golf carts for sale from Golf Cart Buy, in electric and petrol, shipped free Australia-wide.',
+    'Shop new E-Z-GO and used Yamaha golf carts for sale from Golf Cart Buy, in electric and petrol, shipped free Australia-wide.',
   alternates: { canonical: `https://${SITE.domain}/` },
 }
 
@@ -24,7 +24,7 @@ export default function HomePage() {
       address: { '@type': 'PostalAddress', addressCountry: SITE.address.country },
       areaServed: SITE.areaServed,
       numberOfItems: PRODUCTS.length,
-      knowsAbout: ['Electric golf carts', 'Petrol golf carts', 'Yamaha Drive2', 'Used golf carts'],
+      knowsAbout: ['Electric golf carts', 'Petrol golf carts', 'E-Z-GO', 'Yamaha Drive2', 'Used golf carts'],
       priceRange: '$$',
       makesOffer: {
         '@type': 'AggregateOffer',
@@ -65,11 +65,11 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="container hero-content">
-          <h1>Used Golf Carts for Sale — Shipped Australia-Wide</h1>
+          <h1>Golf Carts for Sale — New &amp; Used, Shipped Australia-Wide</h1>
           <p>
             {SITE.name} sells golf carts in Australia and was founded in{' '}
-            {SITE.foundingYear}, offering used Yamaha Drive2 electric and petrol golf carts with
-            free shipping {SITE.shipsTo}.
+            {SITE.foundingYear}, offering new E-Z-GO and used Yamaha electric and petrol golf carts
+            with free shipping {SITE.shipsTo}.
           </p>
           <div className="hero-ctas">
             <a href="/shop/" className="btn btn-primary">Shop Golf Carts</a>
@@ -88,13 +88,13 @@ export default function HomePage() {
             </div>
             <div className="trust-item">
               <div className="trust-icon" aria-hidden="true"><BadgeIcon /></div>
-              <strong>Yamaha Drive2</strong>
+              <strong>E-Z-GO &amp; Yamaha</strong>
               <span>Electric and petrol carts</span>
             </div>
             <div className="trust-item">
               <div className="trust-icon" aria-hidden="true"><WrenchIcon /></div>
-              <strong>Condition Listed</strong>
-              <span>Year, condition and inclusions</span>
+              <strong>New &amp; Used</strong>
+              <span>Specs, condition and inclusions listed</span>
             </div>
             <div className="trust-item">
               <div className="trust-icon" aria-hidden="true"><CoinIcon /></div>
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="section-header">
             <span className="eyebrow">Shop by Category</span>
             <h2>Find the Right Golf Cart</h2>
-            <p>Browse our current used golf carts.</p>
+            <p>Browse our current golf carts.</p>
           </div>
           <div className="grid grid-3">
             {ACTIVE_CATEGORIES.map((c) => (
@@ -125,7 +125,7 @@ export default function HomePage() {
           <div className="section-header">
             <span className="eyebrow">Featured Inventory</span>
             <h2>Popular Golf Carts for Sale</h2>
-            <p>Our current used golf cart inventory.</p>
+            <p>Our current golf cart inventory.</p>
           </div>
           <div className="grid">
             {featured.map((p) => (
@@ -141,7 +141,7 @@ export default function HomePage() {
             <span className="eyebrow">About {SITE.name}</span>
             <h2>Golf Carts Delivered Australia-Wide, Since {SITE.foundingYear}</h2>
             <p>
-              {SITE.name} specialises in used Yamaha Drive2
+              {SITE.name} sells new E-Z-GO and used Yamaha Drive2
               electric and petrol golf carts. We ship {SITE.shipsTo}{' '}
               with no shipping charge, accept crypto payment with a {SITE.cryptoDiscountPercent}%
               discount, and require a ${SITE.minOrder.toLocaleString()} minimum order.
@@ -151,7 +151,7 @@ export default function HomePage() {
           <div className="card" style={{ padding: 24 }}>
             <h3>Why Buy From {SITE.name}?</h3>
             <ul>
-              <li>Used Yamaha Drive2 golf carts, with condition and inclusions listed</li>
+              <li>New E-Z-GO and used Yamaha golf carts, with specs and inclusions listed</li>
               <li>Free shipping on every order, Australia-wide</li>
               <li>{SITE.cryptoDiscountPercent}% discount when you pay with crypto</li>
               <li>Electric and petrol options</li>

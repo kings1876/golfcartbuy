@@ -35,7 +35,7 @@ export default function ProductPage({ params }) {
     name: product.name,
     description: product.description,
     image: product.images.map((img) => `https://${SITE.domain}/images/${img}`),
-    brand: { '@type': 'Brand', name: product.brand || SITE.name },
+    brand: { '@type': 'Brand', name: CATEGORIES.find((c) => c.slug === product.brand)?.name || SITE.name },
     url: `https://${SITE.domain}/product/${product.slug}/`,
     offers: {
       '@type': 'Offer',

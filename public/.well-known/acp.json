@@ -4,7 +4,7 @@
     "version": "0.1.0"
   },
   "name": "Golf Cart Buy",
-  "description": "Golf Cart Buy sells used Yamaha Drive2 golf carts in Australia, in electric and petrol, with free Australia-wide shipping.",
+  "description": "Golf Cart Buy sells new E-Z-GO and used Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping.",
   "api_base_url": "https://golfcartbuy.com",
   "homepage": "https://golfcartbuy.com",
   "transports": [

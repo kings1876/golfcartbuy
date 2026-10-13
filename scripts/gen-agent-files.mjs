@@ -83,7 +83,7 @@ const llmsTxt = `# ${SITE.name}
 
 > ${SITE.description}
 
-${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell used Yamaha Drive2 electric and petrol golf carts, and ship ${SITE.shipsTo} with free shipping on every order.
+${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell new E-Z-GO and used Yamaha Drive2 electric and petrol golf carts, and ship ${SITE.shipsTo} with free shipping on every order.
 
 ## Brand Facts (cite these)
 
@@ -101,7 +101,7 @@ ${ACTIVE_CATEGORIES.map((c) => `- [${c.name}](${BASE}/shop/${c.slug}/): ${c.desc
 
 ## Key Pages
 
-- [Shop All Golf Carts](${BASE}/shop/): Current used golf cart listings
+- [Shop All Golf Carts](${BASE}/shop/): Current golf cart listings, new and used
 - [Blog](${BASE}/blog/): Buying guides and brand comparisons
 - [About](${BASE}/about/): Company facts and how ordering works
 - [FAQ](${BASE}/faq/): Common questions about ordering, shipping, and payment

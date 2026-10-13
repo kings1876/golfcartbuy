@@ -9,7 +9,7 @@ export const SITE = {
   domain: 'golfcartbuy.com',
   target: 'vercel',
   description:
-    'Golf Cart Buy sells used Yamaha Drive2 golf carts in Australia, in electric and petrol, with free Australia-wide shipping.',
+    'Golf Cart Buy sells new E-Z-GO and used Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping.',
   foundingYear: 2017,
   areaServed: 'Australia',
   shipsTo: 'Australia-wide (all states and territories)',
@@ -72,7 +72,7 @@ export const CATEGORIES = [
     slug: 'ezgo',
     name: 'EZGO',
     description:
-      'EZGO golf carts, including the Freedom RXV, Express S4, and TXT lines, new and used.',
+      'New E-Z-GO golf carts, including the Freedom RXV and RXV Fleet lines, in electric and petrol.',
     subcategories: [],
   },
   {
@@ -175,6 +175,66 @@ export const PRODUCTS = [
       'A 2022 Yamaha Drive2 QuieTech EFI petrol golf car in Bronze Metallic, in very good condition. Includes a full service, a new seat, a fold-down windscreen, a spare key, your choice of 8 inch wheel trims (gold, silver, white or chrome) and 2 sand bucket rings.',
     images: ['yamaha-drive2-quietech-efi-2022-bronze-metallic.svg'],
   },
+  {
+    slug: 'e-z-go-rxv-freedom-2-seater',
+    name: 'E-Z-GO Freedom RXV 2 Seater',
+    price: 21995,
+    category: 'ezgo',
+    brand: 'ezgo',
+    badge: 'New',
+    short: 'New E-Z-GO Freedom RXV 2-seat electric golf cart with a Samsung lithium-ion battery.',
+    description:
+      'A new E-Z-GO Freedom RXV 48 volt, 2-seat electric golf cart. Powered by an AC motor with induction service motor brake and regenerative braking, and a single Samsung 2.2 lithium-ion battery pack that is maintenance free and has a battery management system. Features include an automatic E-Park brake, onboard charger, digital state of charge meter, hour meter and speedometer, LED headlights with daytime running lights, a tinted split windshield, modular sun canopy, premium seating, dual USB port, sand bottle kit and E-Shield enhanced frame coating. Paramount 215/40-12 tyres on Rogue alloy mag wheels. Body, canopy and seating are available in a choice of colours.',
+    images: ['e-z-go-rxv-freedom-2-seater.svg'],
+  },
+  {
+    slug: 'e-z-go-rxv-freedom-4-seater',
+    name: 'E-Z-GO Freedom RXV 4 Seater',
+    price: 22995,
+    category: 'ezgo',
+    brand: 'ezgo',
+    badge: 'New',
+    short: 'New E-Z-GO Freedom RXV 4-seat (2+2) electric golf cart with an AC motor.',
+    description:
+      'A new E-Z-GO Freedom RXV 4-seat (2+2) electric golf cart with an AC motor, induction service motor brake and automatic E-Park brake. Powered by four Trojan T1275 12V deep-cycle lead-acid batteries with a 48V Delta Q portable charger. Features include a split-fold windshield (clear or tinted), injection-moulded TPO body with scuff guards and pin striping, head, tail and brake lights, turn signals, DC converter, state of charge meter, horn, reverse beeper and key switch. The extended top and fixed rear seat kit is available in Oyster, Black or Stone Beige, with gold or silver hubcaps.',
+    images: ['e-z-go-rxv-freedom-4-seater.svg'],
+  },
+  {
+    slug: 'e-z-go-rxv-freedom-executive-2-seater-patriot-blue',
+    name: 'E-Z-GO Freedom RXV Executive 2 Seater (Patriot Blue)',
+    price: 24495,
+    category: 'ezgo',
+    brand: 'ezgo',
+    badge: 'New',
+    short: 'New E-Z-GO Freedom RXV Executive 2-seat electric golf cart in Patriot Blue with lithium battery.',
+    description:
+      'A new E-Z-GO Freedom RXV Executive 2-seat electric golf cart in Patriot Blue. AC motor with a single Samsung 2.2 lithium-ion battery pack (maintenance free, with a battery management system), automatic electric park brake, induction service motor brake with regenerative braking and an onboard charger. Includes LED headlights with daytime running lights, LED side mirrors, digital state of charge meter, hour meter and speedometer, injection-moulded TPO body, E-Shield frame coating, fender flares, sports bumper, 12 inch mag wheels, sports steering wheel, premium seating, modular sun canopy, tinted split windshield, glove box, drinks cooler, club and ball washer, 12V phone holder, dual USB port, infotainment with Apple CarPlay and Android Auto, sand bottle kit and rain bag cover.',
+    images: ['e-z-go-rxv-freedom-executive-2-seater-patriot-blue.svg'],
+  },
+  {
+    slug: 'e-z-go-rxv-fleet',
+    name: 'E-Z-GO RXV Fleet',
+    price: 19495,
+    category: 'ezgo',
+    brand: 'ezgo',
+    badge: 'New',
+    short: 'New E-Z-GO RXV Fleet 48V electric golf cart with a Samsung lithium-ion battery.',
+    description:
+      'A new E-Z-GO RXV Fleet 48 volt electric golf cart with an AC motor and a single Samsung 2.2 lithium-ion battery pack (maintenance free, with a battery management system), supplied with a 48V Delta Q portable charger. Weight is 298 kg and dimensions are 240 x 119 x 178 cm. Features include an automatic electric park brake, induction service motor brake with regenerative braking, automatic braking on steep slopes (rated to hold a 40% grade), state of charge meter, reverse beeper, fender scuff guards, split windshield, premium steering wheel, two sand bottles, metallic hubcaps in gold or silver and E-Shield enhanced frame coating. Body, canopy and seating are available in a choice of colours.',
+    images: ['e-z-go-rxv-fleet.svg'],
+  },
+  {
+    slug: 'e-z-go-rxv-fleet-ex1-petrol',
+    name: 'E-Z-GO RXV Fleet EX1 Petrol',
+    price: 16995,
+    category: 'ezgo',
+    brand: 'ezgo',
+    badge: 'New',
+    short: 'New E-Z-GO RXV Fleet EX1 petrol golf cart with an 11.5 hp fuel-injected engine.',
+    description:
+      'A new E-Z-GO RXV Fleet EX1 petrol golf cart powered by an 11.5 hp single-cylinder petrol engine with closed-loop electronic fuel injection. Features include a fuel gauge, fender scuff guards, metallic hubcaps in gold or silver, reverse beeper, injection-moulded TPO body, modular sun canopy, contoured seating, two sand bottles, split windshield, premium steering wheel and E-Shield enhanced frame coating. Body, canopy and seating are available in a choice of colours.',
+    images: ['e-z-go-rxv-fleet-ex1-petrol.svg'],
+  },
 ]
 
 export const POSTS = [
@@ -239,7 +299,7 @@ export const POSTS = [
 export const FAQS = [
   {
     q: 'What is Golf Cart Buy?',
-    a: 'Golf Cart Buy sells used Yamaha Drive2 golf carts in Australia, in electric and petrol, with free Australia-wide shipping, and was founded in 2017.',
+    a: 'Golf Cart Buy sells new E-Z-GO and used Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping, and was founded in 2017.',
   },
   {
     q: 'What is the minimum order amount?',
@@ -263,11 +323,11 @@ export const FAQS = [
   },
   {
     q: 'What is the difference between new and used golf carts?',
-    a: 'New golf carts are unused, while used golf carts have prior wear but are priced lower. Every used cart we list shows its year, condition and what is included.',
+    a: 'New golf carts are unused, while used golf carts have prior wear but are priced lower. Every cart we list shows its specifications, and used carts also show their year, condition and what is included.',
   },
   {
     q: 'Do you sell both electric and petrol golf carts?',
-    a: 'Yes. Our current used Yamaha Drive2 stock includes both electric and petrol golf carts.',
+    a: 'Yes. Our current stock includes both electric and petrol golf carts, from E-Z-GO and Yamaha.',
   },
 ]
 
