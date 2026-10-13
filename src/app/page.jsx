@@ -4,9 +4,9 @@ import ProductCard from '@/components/ProductCard'
 import { TruckIcon, BadgeIcon, WrenchIcon, CoinIcon } from '@/components/icons'
 
 export const metadata = {
-  title: 'Golf Carts for Sale | New E-Z-GO & Used Yamaha',
+  title: 'Golf Carts for Sale | E-Z-GO, Club Car & Yamaha',
   description:
-    'Shop new E-Z-GO and used Yamaha golf carts for sale from Golf Cart Buy, in electric and petrol, shipped free Australia-wide.',
+    'Shop new E-Z-GO and used Club Car and Yamaha golf carts for sale from Golf Cart Buy, shipped free Australia-wide.',
   alternates: { canonical: `https://${SITE.domain}/` },
 }
 
@@ -24,7 +24,7 @@ export default function HomePage() {
       address: { '@type': 'PostalAddress', addressCountry: SITE.address.country },
       areaServed: SITE.areaServed,
       numberOfItems: PRODUCTS.length,
-      knowsAbout: ['Electric golf carts', 'Petrol golf carts', 'E-Z-GO', 'Yamaha Drive2', 'Used golf carts'],
+      knowsAbout: ['Electric golf carts', 'Petrol golf carts', 'E-Z-GO', 'Club Car', 'Yamaha', 'Used golf carts'],
       priceRange: '$$',
       makesOffer: {
         '@type': 'AggregateOffer',
@@ -68,7 +68,7 @@ export default function HomePage() {
           <h1>Golf Carts for Sale — New &amp; Used, Shipped Australia-Wide</h1>
           <p>
             {SITE.name} sells golf carts in Australia and was founded in{' '}
-            {SITE.foundingYear}, offering new E-Z-GO and used Yamaha electric and petrol golf carts
+            {SITE.foundingYear}, offering new E-Z-GO and used Club Car and Yamaha electric and petrol golf carts
             with free shipping {SITE.shipsTo}.
           </p>
           <div className="hero-ctas">
@@ -88,7 +88,7 @@ export default function HomePage() {
             </div>
             <div className="trust-item">
               <div className="trust-icon" aria-hidden="true"><BadgeIcon /></div>
-              <strong>E-Z-GO &amp; Yamaha</strong>
+              <strong>E-Z-GO, Club Car &amp; Yamaha</strong>
               <span>Electric and petrol carts</span>
             </div>
             <div className="trust-item">
@@ -141,7 +141,7 @@ export default function HomePage() {
             <span className="eyebrow">About {SITE.name}</span>
             <h2>Golf Carts Delivered Australia-Wide, Since {SITE.foundingYear}</h2>
             <p>
-              {SITE.name} sells new E-Z-GO and used Yamaha Drive2
+              {SITE.name} sells new E-Z-GO and used Club Car and Yamaha
               electric and petrol golf carts. We ship {SITE.shipsTo}{' '}
               with no shipping charge, accept crypto payment with a {SITE.cryptoDiscountPercent}%
               discount, and require a ${SITE.minOrder.toLocaleString()} minimum order.
@@ -151,7 +151,7 @@ export default function HomePage() {
           <div className="card" style={{ padding: 24 }}>
             <h3>Why Buy From {SITE.name}?</h3>
             <ul>
-              <li>New E-Z-GO and used Yamaha golf carts, with specs and inclusions listed</li>
+              <li>New E-Z-GO and used Club Car and Yamaha golf carts, with specs and details listed</li>
               <li>Free shipping on every order, Australia-wide</li>
               <li>{SITE.cryptoDiscountPercent}% discount when you pay with crypto</li>
               <li>Electric and petrol options</li>

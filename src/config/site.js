@@ -9,7 +9,7 @@ export const SITE = {
   domain: 'golfcartbuy.com',
   target: 'vercel',
   description:
-    'Golf Cart Buy sells new E-Z-GO and used Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping.',
+    'Golf Cart Buy sells new E-Z-GO and used Club Car and Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping.',
   foundingYear: 2017,
   areaServed: 'Australia',
   shipsTo: 'Australia-wide (all states and territories)',
@@ -65,7 +65,7 @@ export const CATEGORIES = [
     slug: 'club-car',
     name: 'Club Car',
     description:
-      'Club Car golf carts, including the Onward, Tempo, and Precedent lines, new and used.',
+      'Used and refurbished Club Car golf carts, including the Tempo, Onward and Ranger.',
     subcategories: [],
   },
   {
@@ -235,6 +235,210 @@ export const PRODUCTS = [
       'A new E-Z-GO RXV Fleet EX1 petrol golf cart powered by an 11.5 hp single-cylinder petrol engine with closed-loop electronic fuel injection. Features include a fuel gauge, fender scuff guards, metallic hubcaps in gold or silver, reverse beeper, injection-moulded TPO body, modular sun canopy, contoured seating, two sand bottles, split windshield, premium steering wheel and E-Shield enhanced frame coating. Body, canopy and seating are available in a choice of colours.',
     images: ['e-z-go-rxv-fleet-ex1-petrol.svg'],
   },
+  {
+    slug: 'used-2021-club-car-tempo-lithium-golf-cart-sapphire-with-premium-seats',
+    name: 'Used 2021 Club Car Tempo Lithium Golf Cart – Sapphire with Premium Seats',
+    price: 6990,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2021 Club Car Tempo electric golf cart in Sapphire with premium seats.',
+    description:
+      'A used 2021 Club Car Tempo electric golf cart in Sapphire with premium seats, with a lithium battery and a listed speed of 32 km/h.',
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-sapphire-with-premium-seats.svg'],
+  },
+  {
+    slug: 'used-2021-club-car-tempo-lithium-golf-cart-green',
+    name: 'Used 2021 Club Car Tempo Lithium Golf Cart – Green',
+    price: 8500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2021 Club Car Tempo electric golf cart in Green.',
+    description:
+      'A used 2021 Club Car Tempo electric golf cart in Green, with a lithium battery and a listed speed of 32 km/h.',
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-green.svg'],
+  },
+  {
+    slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange',
+    name: 'Refurbished 2021 Club Car Tempo Lithium Golf Cart - Atomic Orange',
+    price: 13500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2021 Club Car Tempo electric golf cart in Atomic Orange.',
+    description:
+      'A refurbished 2021 Club Car Tempo electric golf cart in Atomic Orange, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange.svg'],
+  },
+  {
+    slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow',
+    name: 'Refurbished 2021 Club Car Tempo Lithium Golf Cart - Liquid Yellow',
+    price: 14500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2021 Club Car Tempo electric golf cart in Liquid Yellow.',
+    description:
+      'A refurbished 2021 Club Car Tempo electric golf cart in Liquid Yellow, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow.svg'],
+  },
+  {
+    slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-synergy-green',
+    name: 'Refurbished 2021 Club Car Tempo Lithium Golf Cart - Synergy Green',
+    price: 14500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2021 Club Car Tempo electric golf cart in Synergy Green.',
+    description:
+      'A refurbished 2021 Club Car Tempo electric golf cart in Synergy Green, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-synergy-green.svg'],
+  },
+  {
+    slug: 'refurbished-2019-club-car-tempo-lithium-golf-cart-candy-apple-red',
+    name: 'Refurbished 2019 Club Car Tempo Lithium Golf Cart - Candy Apple Red',
+    price: 13500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2019 Club Car Tempo electric golf cart in Candy Apple Red.',
+    description:
+      'A refurbished 2019 Club Car Tempo electric golf cart in Candy Apple Red, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2019-club-car-tempo-lithium-golf-cart-candy-apple-red.svg'],
+  },
+  {
+    slug: 'refurbished-2020-club-car-tempo-lithium-golf-cart-candy-blue',
+    name: 'Refurbished 2020 Club Car Tempo Lithium Golf Cart - Candy Blue',
+    price: 13500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2020 Club Car Tempo electric golf cart in Candy Blue.',
+    description:
+      'A refurbished 2020 Club Car Tempo electric golf cart in Candy Blue, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2020-club-car-tempo-lithium-golf-cart-candy-blue.svg'],
+  },
+  {
+    slug: 'used-2016-yamaha-fla-golf-cart-white',
+    name: 'Used 2016 Yamaha FLA Golf Cart - White',
+    price: 4999,
+    category: 'used-golf-carts',
+    brand: 'yamaha',
+    badge: 'none',
+    short: 'Used 2016 Yamaha electric golf cart in White.',
+    description:
+      'A used 2016 Yamaha electric golf cart in White, with an FLA (flooded lead-acid) battery and a listed speed of 27 km/h.',
+    images: ['used-2016-yamaha-fla-golf-cart-white.svg'],
+  },
+  {
+    slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-ice-blue',
+    name: 'Refurbished 2021 Club Car Tempo Lithium Golf Cart - Ice Blue',
+    price: 12990,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2021 Club Car Tempo electric golf cart in Ice Blue.',
+    description:
+      'A refurbished 2021 Club Car Tempo electric golf cart in Ice Blue, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-ice-blue.svg'],
+  },
+  {
+    slug: 'used-2017-club-car-onward-lithium-golf-cart-metallic-grey',
+    name: 'Used 2017 Club Car Onward Lithium Golf Cart – Metallic Grey',
+    price: 13500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2017 Club Car Onward electric golf cart in Metallic Grey.',
+    description:
+      'A used 2017 Club Car Onward electric golf cart in Metallic Grey, with a lithium battery and a listed speed of 32 km/h.',
+    images: ['used-2017-club-car-onward-lithium-golf-cart-metallic-grey.svg'],
+  },
+  {
+    slug: 'used-2019-club-car-tempo-golf-cart-green',
+    name: 'Used 2019 Club Car Tempo Golf Cart - Green',
+    price: 7100,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2019 Club Car Tempo electric golf cart in Green.',
+    description:
+      'A used 2019 Club Car Tempo electric golf cart in Green, with a choice of FLA (flooded lead-acid) or lithium battery and a listed speed of 32 km/h. The price shown is the starting price, and the battery option affects the final price.',
+    images: ['used-2019-club-car-tempo-golf-cart-green.svg'],
+  },
+  {
+    slug: 'used-2022-club-car-tempo-golf-cart-green',
+    name: 'Used 2022 Club Car Tempo Golf Cart – Green',
+    price: 7990,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2022 Club Car Tempo electric golf cart in Green.',
+    description:
+      'A used 2022 Club Car Tempo electric golf cart in Green, with an FLA (flooded lead-acid) battery and a listed speed of 32 km/h. The price shown is the starting price, and the battery option affects the final price.',
+    images: ['used-2022-club-car-tempo-golf-cart-green.svg'],
+  },
+  {
+    slug: 'used-2021-club-car-tempo-lithium-golf-cart-platinum',
+    name: 'Used 2021 Club Car Tempo Lithium Golf Cart – Platinum',
+    price: 8999,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2021 Club Car Tempo electric golf cart in Platinum.',
+    description:
+      'A used 2021 Club Car Tempo electric golf cart in Platinum, with a lithium battery and a listed speed of 32 km/h.',
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-platinum.svg'],
+  },
+  {
+    slug: 'used-2021-club-car-tempo-lithium-golf-cart-green-10990',
+    name: 'Used 2021 Club Car Tempo Lithium Golf Cart – Green (Second Green Unit)',
+    price: 10990,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2021 Club Car Tempo electric golf cart in Green.',
+    description:
+      'A used 2021 Club Car Tempo electric golf cart in Green, with a lithium battery and a listed speed of 32 km/h.',
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-green-10990.svg'],
+  },
+  {
+    slug: 'refurbished-club-car-ranger-2017-lithium-golf-cart-red',
+    name: 'Refurbished Club Car Ranger 2017 Lithium Golf Cart - Red',
+    price: 13500,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2017 Club Car Ranger electric golf cart in Red.',
+    description:
+      'A refurbished 2017 Club Car Ranger electric golf cart in Red, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-club-car-ranger-2017-lithium-golf-cart-red.svg'],
+  },
+  {
+    slug: 'used-2020-club-car-tempo-lithium-platinum-4-seat-flip-tray-golf-cart',
+    name: 'Used 2020 Club Car Tempo Lithium - Platinum 4 Seat / Flip Tray Golf Cart',
+    price: 10750,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'none',
+    short: 'Used 2020 Club Car Tempo electric golf cart in Platinum in a 4 seat configuration with a flip tray.',
+    description:
+      'A used 2020 Club Car Tempo electric golf cart in Platinum in a 4 seat configuration with a flip tray, with a lithium battery and a listed speed of 32 km/h.',
+    images: ['used-2020-club-car-tempo-lithium-platinum-4-seat-flip-tray-golf-cart.svg'],
+  },
+  {
+    slug: 'refurbished-2022-club-car-tempo-lithium-golf-cart-metallic-platinum',
+    name: 'Refurbished 2022 Club Car Tempo Lithium Golf Cart - Metallic Platinum',
+    price: 13000,
+    category: 'used-golf-carts',
+    brand: 'club-car',
+    badge: 'Refurbished',
+    short: 'Refurbished 2022 Club Car Tempo electric golf cart in Metallic Platinum.',
+    description:
+      'A refurbished 2022 Club Car Tempo electric golf cart in Metallic Platinum, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
+    images: ['refurbished-2022-club-car-tempo-lithium-golf-cart-metallic-platinum.svg'],
+  },
 ]
 
 export const POSTS = [
@@ -299,7 +503,7 @@ export const POSTS = [
 export const FAQS = [
   {
     q: 'What is Golf Cart Buy?',
-    a: 'Golf Cart Buy sells new E-Z-GO and used Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping, and was founded in 2017.',
+    a: 'Golf Cart Buy sells new E-Z-GO and used Club Car and Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping, and was founded in 2017.',
   },
   {
     q: 'What is the minimum order amount?',
@@ -327,7 +531,7 @@ export const FAQS = [
   },
   {
     q: 'Do you sell both electric and petrol golf carts?',
-    a: 'Yes. Our current stock includes both electric and petrol golf carts, from E-Z-GO and Yamaha.',
+    a: 'Yes. Our current stock includes both electric and petrol golf carts, from E-Z-GO, Club Car and Yamaha.',
   },
 ]
 

@@ -4,9 +4,9 @@ import CategoryTile from '@/components/CategoryTile'
 import ProductCard from '@/components/ProductCard'
 
 export const metadata = {
-  title: 'Shop Golf Carts for Sale | New E-Z-GO & Used Yamaha',
+  title: 'Shop Golf Carts | E-Z-GO, Club Car & Yamaha',
   description:
-    'Browse new E-Z-GO and used Yamaha golf carts for sale at Golf Cart Buy, in electric and petrol, shipped free Australia-wide.',
+    'Browse new E-Z-GO and used Club Car and Yamaha golf carts for sale at Golf Cart Buy, shipped free Australia-wide.',
   alternates: { canonical: `https://${SITE.domain}/shop/` },
 }
 
@@ -17,7 +17,7 @@ export default function ShopPage() {
         <Breadcrumbs items={[{ label: 'Shop' }]} />
         <h1>Golf Carts for Sale</h1>
         <p>
-          Browse our current new E-Z-GO and used Yamaha golf carts for sale, in electric and petrol.
+          Browse our current new E-Z-GO and used Club Car and Yamaha golf carts for sale, in electric and petrol.
         </p>
 
         <h2 style={{ marginTop: 40 }}>Shop by Category</h2>

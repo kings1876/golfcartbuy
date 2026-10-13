@@ -83,7 +83,7 @@ const llmsTxt = `# ${SITE.name}
 
 > ${SITE.description}
 
-${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell new E-Z-GO and used Yamaha Drive2 electric and petrol golf carts, and ship ${SITE.shipsTo} with free shipping on every order.
+${SITE.name} sells golf carts in Australia and was founded in ${SITE.foundingYear}. We sell new E-Z-GO and used Club Car and Yamaha electric and petrol golf carts, and ship ${SITE.shipsTo} with free shipping on every order.
 
 ## Brand Facts (cite these)
 

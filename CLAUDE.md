@@ -31,6 +31,6 @@ Never hand-edit generated files (llms.txt, .well-known/*, vercel.json, robots.tx
 - Sells to Australia, ships Australia-wide (all states and territories), free shipping on every order
 - Minimum order: $5,250 AUD
 - Payment: crypto only (BTC, USDT), 10% discount when paying with crypto
-- Current stock: 7 used Yamaha Drive2 golf carts (source: yamahagolfcars.com.au/used.html) and 5 new E-Z-GO carts (source: qldgolfcarts.com.au new E-Z-GO page), listed at the user's request. Facts/specs only; descriptions rewritten; no photos copied; dealer warranties, optional extras, stock status and contact details NOT carried over.
+- Current stock (29 listings, all taken from third-party dealer pages at the user's request): 7 used Yamaha Drive2 (yamahagolfcars.com.au/used.html), 5 new E-Z-GO (qldgolfcarts.com.au), and 17 used/refurbished Club Car + 1 used Yamaha (igu.com.au/collections/used-carts). Facts/specs only; descriptions rewritten; no photos copied; dealer warranties, optional extras, stock status, "was" prices and contact details NOT carried over.
 - Categories with no products are hidden from nav, grids, sitemap and llms.txt (ACTIVE_CATEGORIES in site.js); they return after products are added.
 No invented statistics, awards, press, or named clients. Ever.

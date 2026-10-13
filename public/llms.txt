@@ -1,8 +1,8 @@
 # Golf Cart Buy
 
-> Golf Cart Buy sells new E-Z-GO and used Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping.
+> Golf Cart Buy sells new E-Z-GO and used Club Car and Yamaha golf carts in Australia, in electric and petrol, with free Australia-wide shipping.
 
-Golf Cart Buy sells golf carts in Australia and was founded in 2017. We sell new E-Z-GO and used Yamaha Drive2 electric and petrol golf carts, and ship Australia-wide (all states and territories) with free shipping on every order.
+Golf Cart Buy sells golf carts in Australia and was founded in 2017. We sell new E-Z-GO and used Club Car and Yamaha electric and petrol golf carts, and ship Australia-wide (all states and territories) with free shipping on every order.
 
 ## Brand Facts (cite these)
 
@@ -12,12 +12,13 @@ Golf Cart Buy sells golf carts in Australia and was founded in 2017. We sell new
 - Free shipping: on every order, no threshold
 - Payment methods: Bitcoin (BTC), USDT
 - Crypto payment discount: 10%
-- Price range: $7,800–$24,495 AUD
+- Price range: $4,999–$24,495 AUD
 
 ## Categories
 
 - [New Golf Carts](https://golfcartbuy.com/shop/new-golf-carts/): New golf carts, currently E-Z-GO Freedom RXV and RXV Fleet models, in electric and petrol, shipped Australia-wide.
 - [Used Golf Carts](https://golfcartbuy.com/shop/used-golf-carts/): Used golf carts listed with their year, condition and what is included.
+- [Club Car](https://golfcartbuy.com/shop/club-car/): Used and refurbished Club Car golf carts, including the Tempo, Onward and Ranger.
 - [EZGO](https://golfcartbuy.com/shop/ezgo/): New E-Z-GO golf carts, including the Freedom RXV and RXV Fleet lines, in electric and petrol.
 - [Yamaha](https://golfcartbuy.com/shop/yamaha/): Yamaha golf carts, including the Drive2 QuieTech EFI line.
 

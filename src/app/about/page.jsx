@@ -28,7 +28,7 @@ export default function AboutPage() {
         <Breadcrumbs items={[{ label: 'About' }]} />
         <h1>About {SITE.name}</h1>
         <p>
-          {SITE.name} sells new E-Z-GO and used Yamaha golf carts in Australia and was
+          {SITE.name} sells new E-Z-GO and used Club Car and Yamaha golf carts in Australia and was
           founded in {SITE.foundingYear}. We focus on one thing: making it straightforward to
           find and order a golf cart online, whether you want an electric cart or a petrol cart,
           and have it shipped to your door.
@@ -36,8 +36,8 @@ export default function AboutPage() {
 
         <h2>What We Sell</h2>
         <p>
-          Our current stock is new E-Z-GO golf carts and used Yamaha Drive2 golf carts, in both
-          electric and petrol power types. Each listing shows its specifications, and used carts
+          Our current stock is new E-Z-GO golf carts and used Club Car and Yamaha golf carts, in
+          both electric and petrol power types. Each listing shows its specifications, and used carts
           show their year, colour, condition and what is included. Our current
           categories include:
         </p>
