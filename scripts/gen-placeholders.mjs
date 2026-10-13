@@ -44,6 +44,7 @@ function escapeXml(s) {
 
 for (const p of PRODUCTS) {
   for (const img of p.images) {
+    if (!img.endsWith('.svg')) continue // real photos (see scripts/images.mjs) — never overwrite
     const filePath = path.join(outDir, img)
     fs.writeFileSync(filePath, svgFor(p.name))
     console.log('wrote', img)

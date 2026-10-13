@@ -185,7 +185,7 @@ export const PRODUCTS = [
     short: 'New E-Z-GO Freedom RXV 2-seat electric golf cart with a Samsung lithium-ion battery.',
     description:
       'A new E-Z-GO Freedom RXV 48 volt, 2-seat electric golf cart. Powered by an AC motor with induction service motor brake and regenerative braking, and a single Samsung 2.2 lithium-ion battery pack that is maintenance free and has a battery management system. Features include an automatic E-Park brake, onboard charger, digital state of charge meter, hour meter and speedometer, LED headlights with daytime running lights, a tinted split windshield, modular sun canopy, premium seating, dual USB port, sand bottle kit and E-Shield enhanced frame coating. Paramount 215/40-12 tyres on Rogue alloy mag wheels. Body, canopy and seating are available in a choice of colours.',
-    images: ['e-z-go-rxv-freedom-2-seater.svg'],
+    images: ['e-z-go-rxv-freedom-2-seater.webp'],
   },
   {
     slug: 'e-z-go-rxv-freedom-4-seater',
@@ -197,7 +197,7 @@ export const PRODUCTS = [
     short: 'New E-Z-GO Freedom RXV 4-seat (2+2) electric golf cart with an AC motor.',
     description:
       'A new E-Z-GO Freedom RXV 4-seat (2+2) electric golf cart with an AC motor, induction service motor brake and automatic E-Park brake. Powered by four Trojan T1275 12V deep-cycle lead-acid batteries with a 48V Delta Q portable charger. Features include a split-fold windshield (clear or tinted), injection-moulded TPO body with scuff guards and pin striping, head, tail and brake lights, turn signals, DC converter, state of charge meter, horn, reverse beeper and key switch. The extended top and fixed rear seat kit is available in Oyster, Black or Stone Beige, with gold or silver hubcaps.',
-    images: ['e-z-go-rxv-freedom-4-seater.svg'],
+    images: ['e-z-go-rxv-freedom-4-seater.webp'],
   },
   {
     slug: 'e-z-go-rxv-freedom-executive-2-seater-patriot-blue',
@@ -209,7 +209,7 @@ export const PRODUCTS = [
     short: 'New E-Z-GO Freedom RXV Executive 2-seat electric golf cart in Patriot Blue with lithium battery.',
     description:
       'A new E-Z-GO Freedom RXV Executive 2-seat electric golf cart in Patriot Blue. AC motor with a single Samsung 2.2 lithium-ion battery pack (maintenance free, with a battery management system), automatic electric park brake, induction service motor brake with regenerative braking and an onboard charger. Includes LED headlights with daytime running lights, LED side mirrors, digital state of charge meter, hour meter and speedometer, injection-moulded TPO body, E-Shield frame coating, fender flares, sports bumper, 12 inch mag wheels, sports steering wheel, premium seating, modular sun canopy, tinted split windshield, glove box, drinks cooler, club and ball washer, 12V phone holder, dual USB port, infotainment with Apple CarPlay and Android Auto, sand bottle kit and rain bag cover.',
-    images: ['e-z-go-rxv-freedom-executive-2-seater-patriot-blue.svg'],
+    images: ['e-z-go-rxv-freedom-executive-2-seater-patriot-blue.webp'],
   },
   {
     slug: 'e-z-go-rxv-fleet',
@@ -221,7 +221,7 @@ export const PRODUCTS = [
     short: 'New E-Z-GO RXV Fleet 48V electric golf cart with a Samsung lithium-ion battery.',
     description:
       'A new E-Z-GO RXV Fleet 48 volt electric golf cart with an AC motor and a single Samsung 2.2 lithium-ion battery pack (maintenance free, with a battery management system), supplied with a 48V Delta Q portable charger. Weight is 298 kg and dimensions are 240 x 119 x 178 cm. Features include an automatic electric park brake, induction service motor brake with regenerative braking, automatic braking on steep slopes (rated to hold a 40% grade), state of charge meter, reverse beeper, fender scuff guards, split windshield, premium steering wheel, two sand bottles, metallic hubcaps in gold or silver and E-Shield enhanced frame coating. Body, canopy and seating are available in a choice of colours.',
-    images: ['e-z-go-rxv-fleet.svg'],
+    images: ['e-z-go-rxv-fleet.webp'],
   },
   {
     slug: 'e-z-go-rxv-fleet-ex1-petrol',
@@ -233,7 +233,7 @@ export const PRODUCTS = [
     short: 'New E-Z-GO RXV Fleet EX1 petrol golf cart with an 11.5 hp fuel-injected engine.',
     description:
       'A new E-Z-GO RXV Fleet EX1 petrol golf cart powered by an 11.5 hp single-cylinder petrol engine with closed-loop electronic fuel injection. Features include a fuel gauge, fender scuff guards, metallic hubcaps in gold or silver, reverse beeper, injection-moulded TPO body, modular sun canopy, contoured seating, two sand bottles, split windshield, premium steering wheel and E-Shield enhanced frame coating. Body, canopy and seating are available in a choice of colours.',
-    images: ['e-z-go-rxv-fleet-ex1-petrol.svg'],
+    images: ['e-z-go-rxv-fleet-ex1-petrol.webp'],
   },
   {
     slug: 'used-2021-club-car-tempo-lithium-golf-cart-sapphire-with-premium-seats',
@@ -245,7 +245,7 @@ export const PRODUCTS = [
     short: 'Used 2021 Club Car Tempo electric golf cart in Sapphire with premium seats.',
     description:
       'A used 2021 Club Car Tempo electric golf cart in Sapphire with premium seats, with a lithium battery and a listed speed of 32 km/h.',
-    images: ['used-2021-club-car-tempo-lithium-golf-cart-sapphire-with-premium-seats.svg'],
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-sapphire-with-premium-seats.webp'],
   },
   {
     slug: 'used-2021-club-car-tempo-lithium-golf-cart-green',
@@ -257,7 +257,7 @@ export const PRODUCTS = [
     short: 'Used 2021 Club Car Tempo electric golf cart in Green.',
     description:
       'A used 2021 Club Car Tempo electric golf cart in Green, with a lithium battery and a listed speed of 32 km/h.',
-    images: ['used-2021-club-car-tempo-lithium-golf-cart-green.svg'],
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-green.webp'],
   },
   {
     slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange',
@@ -269,7 +269,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2021 Club Car Tempo electric golf cart in Atomic Orange.',
     description:
       'A refurbished 2021 Club Car Tempo electric golf cart in Atomic Orange, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange.svg'],
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-atomic-orange.webp'],
   },
   {
     slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow',
@@ -281,7 +281,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2021 Club Car Tempo electric golf cart in Liquid Yellow.',
     description:
       'A refurbished 2021 Club Car Tempo electric golf cart in Liquid Yellow, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow.svg'],
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-liquid-yellow.webp'],
   },
   {
     slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-synergy-green',
@@ -293,7 +293,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2021 Club Car Tempo electric golf cart in Synergy Green.',
     description:
       'A refurbished 2021 Club Car Tempo electric golf cart in Synergy Green, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-synergy-green.svg'],
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-synergy-green.webp'],
   },
   {
     slug: 'refurbished-2019-club-car-tempo-lithium-golf-cart-candy-apple-red',
@@ -305,7 +305,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2019 Club Car Tempo electric golf cart in Candy Apple Red.',
     description:
       'A refurbished 2019 Club Car Tempo electric golf cart in Candy Apple Red, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2019-club-car-tempo-lithium-golf-cart-candy-apple-red.svg'],
+    images: ['refurbished-2019-club-car-tempo-lithium-golf-cart-candy-apple-red.webp'],
   },
   {
     slug: 'refurbished-2020-club-car-tempo-lithium-golf-cart-candy-blue',
@@ -317,7 +317,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2020 Club Car Tempo electric golf cart in Candy Blue.',
     description:
       'A refurbished 2020 Club Car Tempo electric golf cart in Candy Blue, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2020-club-car-tempo-lithium-golf-cart-candy-blue.svg'],
+    images: ['refurbished-2020-club-car-tempo-lithium-golf-cart-candy-blue.webp'],
   },
   {
     slug: 'used-2016-yamaha-fla-golf-cart-white',
@@ -329,7 +329,7 @@ export const PRODUCTS = [
     short: 'Used 2016 Yamaha electric golf cart in White.',
     description:
       'A used 2016 Yamaha electric golf cart in White, with an FLA (flooded lead-acid) battery and a listed speed of 27 km/h.',
-    images: ['used-2016-yamaha-fla-golf-cart-white.svg'],
+    images: ['used-2016-yamaha-fla-golf-cart-white.webp'],
   },
   {
     slug: 'refurbished-2021-club-car-tempo-lithium-golf-cart-ice-blue',
@@ -341,7 +341,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2021 Club Car Tempo electric golf cart in Ice Blue.',
     description:
       'A refurbished 2021 Club Car Tempo electric golf cart in Ice Blue, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-ice-blue.svg'],
+    images: ['refurbished-2021-club-car-tempo-lithium-golf-cart-ice-blue.webp'],
   },
   {
     slug: 'used-2017-club-car-onward-lithium-golf-cart-metallic-grey',
@@ -353,7 +353,7 @@ export const PRODUCTS = [
     short: 'Used 2017 Club Car Onward electric golf cart in Metallic Grey.',
     description:
       'A used 2017 Club Car Onward electric golf cart in Metallic Grey, with a lithium battery and a listed speed of 32 km/h.',
-    images: ['used-2017-club-car-onward-lithium-golf-cart-metallic-grey.svg'],
+    images: ['used-2017-club-car-onward-lithium-golf-cart-metallic-grey.webp'],
   },
   {
     slug: 'used-2019-club-car-tempo-golf-cart-green',
@@ -366,7 +366,7 @@ export const PRODUCTS = [
     short: 'Used 2019 Club Car Tempo electric golf cart in Green.',
     description:
       'A used 2019 Club Car Tempo electric golf cart in Green, with a choice of FLA (flooded lead-acid) or lithium battery and a listed speed of 32 km/h. The price shown is the starting price, and the battery option affects the final price.',
-    images: ['used-2019-club-car-tempo-golf-cart-green.svg'],
+    images: ['used-2019-club-car-tempo-golf-cart-green.webp'],
   },
   {
     slug: 'used-2022-club-car-tempo-golf-cart-green',
@@ -379,7 +379,7 @@ export const PRODUCTS = [
     short: 'Used 2022 Club Car Tempo electric golf cart in Green.',
     description:
       'A used 2022 Club Car Tempo electric golf cart in Green, with an FLA (flooded lead-acid) battery and a listed speed of 32 km/h. The price shown is the starting price, and the battery option affects the final price.',
-    images: ['used-2022-club-car-tempo-golf-cart-green.svg'],
+    images: ['used-2022-club-car-tempo-golf-cart-green.webp'],
   },
   {
     slug: 'used-2021-club-car-tempo-lithium-golf-cart-platinum',
@@ -391,7 +391,7 @@ export const PRODUCTS = [
     short: 'Used 2021 Club Car Tempo electric golf cart in Platinum.',
     description:
       'A used 2021 Club Car Tempo electric golf cart in Platinum, with a lithium battery and a listed speed of 32 km/h.',
-    images: ['used-2021-club-car-tempo-lithium-golf-cart-platinum.svg'],
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-platinum.webp'],
   },
   {
     slug: 'used-2021-club-car-tempo-lithium-golf-cart-green-10990',
@@ -403,7 +403,7 @@ export const PRODUCTS = [
     short: 'Used 2021 Club Car Tempo electric golf cart in Green.',
     description:
       'A used 2021 Club Car Tempo electric golf cart in Green, with a lithium battery and a listed speed of 32 km/h.',
-    images: ['used-2021-club-car-tempo-lithium-golf-cart-green-10990.svg'],
+    images: ['used-2021-club-car-tempo-lithium-golf-cart-green-10990.webp'],
   },
   {
     slug: 'refurbished-club-car-ranger-2017-lithium-golf-cart-red',
@@ -415,7 +415,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2017 Club Car Ranger electric golf cart in Red.',
     description:
       'A refurbished 2017 Club Car Ranger electric golf cart in Red, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-club-car-ranger-2017-lithium-golf-cart-red.svg'],
+    images: ['refurbished-club-car-ranger-2017-lithium-golf-cart-red.webp'],
   },
   {
     slug: 'used-2020-club-car-tempo-lithium-platinum-4-seat-flip-tray-golf-cart',
@@ -427,7 +427,7 @@ export const PRODUCTS = [
     short: 'Used 2020 Club Car Tempo electric golf cart in Platinum in a 4 seat configuration with a flip tray.',
     description:
       'A used 2020 Club Car Tempo electric golf cart in Platinum in a 4 seat configuration with a flip tray, with a lithium battery and a listed speed of 32 km/h.',
-    images: ['used-2020-club-car-tempo-lithium-platinum-4-seat-flip-tray-golf-cart.svg'],
+    images: ['used-2020-club-car-tempo-lithium-platinum-4-seat-flip-tray-golf-cart.webp'],
   },
   {
     slug: 'refurbished-2022-club-car-tempo-lithium-golf-cart-metallic-platinum',
@@ -439,7 +439,7 @@ export const PRODUCTS = [
     short: 'Refurbished 2022 Club Car Tempo electric golf cart in Metallic Platinum.',
     description:
       'A refurbished 2022 Club Car Tempo electric golf cart in Metallic Platinum, with a lithium battery and a listed speed of 32 km/h. This is a refurbished custom build.',
-    images: ['refurbished-2022-club-car-tempo-lithium-golf-cart-metallic-platinum.svg'],
+    images: ['refurbished-2022-club-car-tempo-lithium-golf-cart-metallic-platinum.webp'],
   },
 ]
 

@@ -6,3 +6,6 @@ out/
 docs/_contact-sheet.png
 .DS_Store
 .claude/
+
+# client/third-party original photos are processed into public/images, not committed
+assets/product-photos/
